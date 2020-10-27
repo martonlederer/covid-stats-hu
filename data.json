@@ -1,9 +1,23 @@
-[
-  {
-    "day": "2020-10-26",
-    "tests": 14000,
-    "cases": 2000,
-    "deaths": 30,
-    "recoveries": 30
-  }
-]
+{
+  "total": {
+    "tests": 1002093,
+    "casesBp": 17782,
+    "casesOthers": 45860,
+    "deathsBp": 544,
+    "deathsOthers": 991,
+    "recoveriesBp": 4766,
+    "recoveriesOthers": 11880
+  },
+  "days": [
+    {
+      "day": "2020-10-26",
+      "tests": 1002092,
+      "casesBp": 12471,
+      "casesOthers": 32988,
+      "deathsBp": 543,
+      "deathsOthers": 990,
+      "recoveriesBp": 4765,
+      "recoveriesOthers": 11879
+    }
+  ]
+}

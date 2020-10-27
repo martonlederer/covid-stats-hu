@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "moment": "^2.29.1"
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "node-html-parser": "^1.4.2"
   }
 }
