@@ -5,5 +5,12 @@
     "cases": 2000,
     "deaths": 30,
     "recoveries": 30
+  },
+  {
+    "day": "2020-10-27",
+    "tests": 12000,
+    "cases": 1800,
+    "death": 10,
+    "recoveries": 40
   }
 ]
