@@ -18,6 +18,16 @@
       "deathsOthers": 990,
       "recoveriesBp": 4765,
       "recoveriesOthers": 11879
+    },
+    {
+      "day": "2020-10-27",
+      "tests": 1,
+      "casesBp": 1,
+      "casesOthers": 1,
+      "deathsBp": 1,
+      "deathsOthers": 1,
+      "recoveriesBp": 1,
+      "recoveriesOthers": 1
     }
   ]
 }
