@@ -1,0 +1,15 @@
+{
+  "name": "covid-stats-hu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/martonlederer/covid-stats-hu.git",
+  "author": "Marton Lederer <marton@lederer.hu>",
+  "license": "MIT",
+  "scripts": {
+    "sync": "node sync-data.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "moment": "^2.29.1"
+  }
+}
