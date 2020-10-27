@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
     
       - name: Checkout master
         uses: actions/checkout@master
