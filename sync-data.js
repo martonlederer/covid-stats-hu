@@ -6,7 +6,7 @@ const
   { parse } = require('node-html-parser'),
   createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join(''))
 
-require('dotenv').config()
+if(!process.env.PRODUCTION) require('dotenv').config()
 
 let covidData = JSON.parse(new TextDecoder().decode(readFileSync('data.json')))
 

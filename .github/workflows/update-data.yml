@@ -29,6 +29,7 @@ jobs:
       - name: Fetch data
         run: yarn sync
         env:
+          PRODUCTION: true
           API_URL: ${{ secrets.API_URL }}
           TESTS_EL: ${{ secrets.TESTS_EL }}
           CASES_PEST_EL: ${{ secrets.CASES_PEST_EL }}
