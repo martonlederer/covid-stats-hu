@@ -10,24 +10,14 @@
   },
   "days": [
     {
-      "day": "2020-10-26",
-      "tests": 1002092,
-      "casesBp": 12471,
-      "casesOthers": 32988,
-      "deathsBp": 543,
-      "deathsOthers": 990,
-      "recoveriesBp": 4765,
-      "recoveriesOthers": 11879
-    },
-    {
-      "day": "2020-10-27",
-      "tests": 1,
+      "day": "2020-06-01",
+      "tests": 1985,
       "casesBp": 1,
-      "casesOthers": 1,
-      "deathsBp": 1,
+      "casesOthers": 5,
+      "deathsBp": 0,
       "deathsOthers": 1,
-      "recoveriesBp": 1,
-      "recoveriesOthers": 1
+      "recoveriesBp": 6,
+      "recoveriesOthers": 3
     }
   ]
 }
