@@ -24,13 +24,19 @@ export class TotalData {
   @Field()
   caseRateBp: number // what percentage of Budapest is sick
   @Field()
+  caseRateOthers: number // what percentage outside of Budapest is sick
+  @Field()
   caseRate: number // what percentage of Hungary is sick
   @Field()
   recoveryRateBp: number // what percentage of Budapest has recovered
   @Field()
+  recoveryRateOthers: number // what percentage outside of Budapest has recovered
+  @Field()
   recoveryRate: number // what percentage of Hungary has recovered
   @Field()
   fatalityRateBp: number // fatal case rate in Budapest
+  @Field()
+  fatalityRateOthers: number // fatal case rate outside of Budapest
   @Field()
   fatalityRate: number // fatal case rate in Hungary
 }
