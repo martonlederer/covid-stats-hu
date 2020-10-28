@@ -51,3 +51,45 @@ export interface ITotalData {
   recoveriesBp: number
   recoveriesOthers: number
 }
+
+// daily data saved in data.json
+@ObjectType()
+export class DayData {
+  @Field()
+  day: string // the date of the record
+  @Field()
+  tests: number // additional tests made on the given day
+  @Field()
+  casesBp: number // additional cases in Budapest on the given day
+  @Field()
+  casesOthers: number // additional cases outside of Budapest on the given day
+  @Field()
+  cases: number // additional cases on the given day
+  @Field()
+  deathsBp: number // additional fatal cases in Budapest on the given day
+  @Field()
+  deathsOthers: number // additional fatal cases outside of Budapest on the given day
+  @Field()
+  deaths: number // additional fatal cases on the given day
+  @Field()
+  recoveriesBp: number // additional recoveries  in Budapest on the given day
+  @Field()
+  recoveriesOthers: number // additional recoveries outside of Budapest on the given day
+  @Field()
+  recoveries: number // additional revoceries on the given day
+  @Field()
+  nodata: boolean // if no data is recorded that day
+}
+
+// daily data interface
+export interface IDayData {
+  day: string
+  tests: number
+  casesBp: number
+  casesOthers: number
+  deathsBp: number
+  deathsOthers: number
+  recoveriesBp: number
+  recoveriesOthers: number
+  nodata: boolean
+}

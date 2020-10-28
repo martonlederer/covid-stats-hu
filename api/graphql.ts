@@ -1,14 +1,18 @@
 import 'reflect-metadata'
 import type { NowRequest, NowResponse } from '@vercel/node'
 import { ApolloServer } from 'apollo-server-micro'
-import { buildSchema, Query, Resolver } from 'type-graphql'
-import { TotalData, ITotalData } from './types'
+import { buildSchema, Query, Resolver, Arg } from 'type-graphql'
+import { TotalData, ITotalData, DayData, IDayData } from './types'
 import { promises as fs } from 'fs'
 import { join } from 'path'
 import axios from 'axios'
+import moment from 'moment-timezone'
+
+moment.tz.setDefault('Europe/Budapest')
 
 @Resolver()
 class DataResolver {
+  // all time data
   @Query(() => TotalData)
   async allTime() {
     const data: ITotalData = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
@@ -46,6 +50,29 @@ class DataResolver {
     }
 
     return apiData
+  }
+
+  // days data
+  @Query(() => [DayData])
+  async dailyData(
+    @Arg('from', { defaultValue: '2020-06-01' }) from: string,
+    @Arg('to', { defaultValue: moment().format('YYYY-MM-DD') }) to: string
+  ): Promise<DayData[]> {
+    if (moment(to).diff(from) < 0) throw new Error('From date is more than to date')
+    const data: IDayData[] = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
+      .days
+    let apiDays: DayData[] = []
+
+    for (const day of data) {
+      apiDays.push({
+        ...day,
+        cases: day.casesBp + day.casesOthers,
+        deaths: day.deathsBp + day.deathsOthers,
+        recoveries: day.recoveriesBp + day.recoveriesOthers
+      })
+    }
+
+    return apiDays.filter(({ day }) => moment(day).isBetween(from, to) || day === from || day === to)
   }
 }
 

@@ -5,6 +5,7 @@
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
     "sourceMap": true,
     "outDir": "./dist",
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "declaration": false,
     "composite": false,
@@ -25,5 +26,5 @@
     "rootDir": "./"
   },
   "exclude": ["node_modules"],
-  "include": ["./**/*.ts"]
+  "include": ["./**/*"]
 }
