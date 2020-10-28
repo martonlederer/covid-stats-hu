@@ -1,18 +1,27 @@
+// This file syncs the data in data.json with the API data
+// it is an automated cron-job, running every second hour, or on push
+// for more info, check .github/workflows/update-data.yml
+
 const 
-  moment = require('moment'),
+  moment = require('moment-timezone'),
   axios = require('axios'),
   { readFileSync, writeFileSync } = require('fs'),
   { exit } = require('process'),
   { parse } = require('node-html-parser'),
+
   createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join(''))
 
-if(!process.env.PRODUCTION) require('dotenv').config()
+if(!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
+
+moment.tz.setDefault('Europe/Budapest')
 
 let covidData = JSON.parse(new TextDecoder().decode(readFileSync('data.json')))
 
 axios
-  .get(process.env.API_URL) // API URL
+  .get(process.env.API_URL)
   .then(({ data }) => {
+    console.log('Got data from API')
+
     // get current data
     const 
       parsedData = parse(data),
@@ -25,6 +34,21 @@ axios
       currentRecoveriesOthers = createDataFromEl(parsedData, process.env.RECOVERIES_OTHERS_EL),
       previousData = covidData['days'].find(el => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD'))
 
+    console.log('Processed/parsed data')
+
+    // check if this day was already pushed
+    if(covidData['days'].find(el => el.day === moment().format('YYYY-MM-DD')) !== undefined) {
+      console.log('Day already pushed');
+      exit(0)
+    }
+
+    // the site did not update yet
+    // exit
+    if(previousData.tests === tests) {
+      console.log('Site not yet updated... Retrying in 2 hours...');
+      exit(0)
+    }
+
     // update total data
     covidData['total'] = {
       tests,
@@ -36,20 +60,24 @@ axios
       recoveriesOthers: currentRecoveriesOthers
     }
 
+    console.log('Calculated total data')
+
     // push a new day
-    if(covidData['days'].find(el => el.day === moment().format('YYYY-MM-DD')) === undefined)
-      covidData['days'].push({
-        day: moment().format('YYYY-MM-DD'),
-        tests: tests - previousData.tests,
-        casesBp: currentCasesBp - previousData.casesBp,
-        casesOthers: currentCasesOthers - previousData.casesOthers,
-        deathsBp: currentDeathsBp - previousData.deathsBp,
-        deathsOthers: currentDeathsOthers - previousData.deathsOthers,
-        recoveriesBp: currentRecoveriesBp - previousData.recoveriesBp,
-        recoveriesOthers: currentRecoveriesOthers - previousData.recoveriesOthers
-      })
+    covidData['days'].push({
+      day: moment().format('YYYY-MM-DD'),
+      tests: tests - previousData.tests,
+      casesBp: currentCasesBp - previousData.casesBp,
+      casesOthers: currentCasesOthers - previousData.casesOthers,
+      deathsBp: currentDeathsBp - previousData.deathsBp,
+      deathsOthers: currentDeathsOthers - previousData.deathsOthers,
+      recoveriesBp: currentRecoveriesBp - previousData.recoveriesBp,
+      recoveriesOthers: currentRecoveriesOthers - previousData.recoveriesOthers
+    })
+
+    console.log('Got today\'s data')
     
     writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+    console.log('Wrote file')
   })
   .catch((err) => {
     console.error('Error: Could not fetch data: \n', err)
