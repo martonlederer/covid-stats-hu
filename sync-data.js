@@ -32,7 +32,9 @@ axios
       currentDeathsOthers = createDataFromEl(parsedData, process.env.DEATHS_OTHERS_EL),
       currentRecoveriesBp = createDataFromEl(parsedData, process.env.RECOVERIES_BP_EL),
       currentRecoveriesOthers = createDataFromEl(parsedData, process.env.RECOVERIES_OTHERS_EL),
-      previousData = covidData['days'].find(el => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD'))
+      casesBp = currentCasesBp + currentDeathsBp + currentRecoveriesBp,
+      casesOthers = currentCasesOthers + currentDeathsOthers + currentRecoveriesOthers,
+      previousData = covidData['total']
 
     console.log('Processed/parsed data')
 
@@ -41,19 +43,49 @@ axios
       console.log('Day already pushed');
       exit(0)
     }
+    
+    // let's find the last update date
+    for(const pElement of parsedData.querySelectorAll('p')) {
+      if(pElement.innerText.includes('Legutolsó frissítés dátuma:')) {
+        const lastUpdateDate = moment(new Date(pElement.innerText.replace('Legutolsó frissítés dátuma:', ''))).format('YYYY-MM-DD')
 
-    // the site did not update yet
+        if(moment().format('YYYY-MM-DD') !== lastUpdateDate) {
+          console.log('Data did not yet update today...')
+          exit(0)
+        }else {
+          // only check for the first occurance
+          break
+        }
+      }
+    }
+
+    // the site did not update today
     // exit
     if(previousData.tests === tests) {
-      console.log('Site not yet updated... Retrying in 2 hours...');
+      console.log('Data did not update today...');
       exit(0)
     }
+
+    // push a new day
+    covidData['days'].push({
+      day: moment().format('YYYY-MM-DD'),
+      tests: tests - previousData.tests,
+      casesBp: casesBp - previousData.casesBp,
+      casesOthers: casesOthers - previousData.casesOthers,
+      deathsBp: currentDeathsBp - previousData.deathsBp,
+      deathsOthers: currentDeathsOthers - previousData.deathsOthers,
+      recoveriesBp: currentRecoveriesBp - previousData.recoveriesBp,
+      recoveriesOthers: currentRecoveriesOthers - previousData.recoveriesOthers,
+      nodata: false // TODO
+    })
+
+    console.log('Got today\'s data')
 
     // update total data
     covidData['total'] = {
       tests,
-      casesBp: currentCasesBp + currentDeathsBp + currentRecoveriesBp,
-      casesOthers: currentCasesOthers + currentDeathsOthers + currentRecoveriesOthers,
+      casesBp,
+      casesOthers,
       deathsBp: currentDeathsBp,
       deathsOthers: currentDeathsOthers,
       recoveriesBp: currentRecoveriesBp,
@@ -61,20 +93,6 @@ axios
     }
 
     console.log('Calculated total data')
-
-    // push a new day
-    covidData['days'].push({
-      day: moment().format('YYYY-MM-DD'),
-      tests: tests - previousData.tests,
-      casesBp: currentCasesBp - previousData.casesBp,
-      casesOthers: currentCasesOthers - previousData.casesOthers,
-      deathsBp: currentDeathsBp - previousData.deathsBp,
-      deathsOthers: currentDeathsOthers - previousData.deathsOthers,
-      recoveriesBp: currentRecoveriesBp - previousData.recoveriesBp,
-      recoveriesOthers: currentRecoveriesOthers - previousData.recoveriesOthers
-    })
-
-    console.log('Got today\'s data')
     
     writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
     console.log('Wrote file')

@@ -1645,18 +1645,7 @@
       "deathsBp": 0,
       "deathsOthers": 0,
       "recoveriesBp": 0,
-      "recoveriesOthers": 0,
-      "nodata": true
-    },
-    {
-      "day": "2020-10-28",
-      "tests": 1002093,
-      "casesBp": 12472,
-      "casesOthers": 32989,
-      "deathsBp": 544,
-      "deathsOthers": 991,
-      "recoveriesBp": 4766,
-      "recoveriesOthers": 11880
+      "recoveriesOthers": 0
     }
   ]
 }
