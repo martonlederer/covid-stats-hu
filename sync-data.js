@@ -38,6 +38,23 @@ axios
 
     console.log('Processed/parsed data')
 
+    // check if yesterday is not existing
+    if(covidData['days'].find(el => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD')) === undefined) {
+      covidData['days'].push({
+        day: moment().subtract(1, 'days').format('YYYY-MM-DD'),
+        tests: 0,
+        casesBp: 0,
+        casesOthers: 0,
+        deathsBp: 0,
+        deathsOthers: 0,
+        recoveriesBp: 0,
+        recoveriesOthers: 0,
+        nodata: true
+      })
+      writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+      console.log('Updated yesterday\'s data')
+    }
+
     // check if this day was already pushed
     if(covidData['days'].find(el => el.day === moment().format('YYYY-MM-DD')) !== undefined) {
       console.log('Day already pushed');
@@ -76,7 +93,7 @@ axios
       deathsOthers: currentDeathsOthers - previousData.deathsOthers,
       recoveriesBp: currentRecoveriesBp - previousData.recoveriesBp,
       recoveriesOthers: currentRecoveriesOthers - previousData.recoveriesOthers,
-      nodata: false // TODO
+      nodata: false
     })
 
     console.log('Got today\'s data')
