@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import type { NowRequest, NowResponse } from '@vercel/node'
 import { ApolloServer } from 'apollo-server-micro'
 import { buildSchema, Query, Resolver, Arg } from 'type-graphql'
-import { TotalData, ITotalData, DayData, IDayData } from './types'
+import { TotalData, ITotalData, DayData, IDayData, IHungaryInfo } from './types'
 import { promises as fs } from 'fs'
 import { join } from 'path'
 import axios from 'axios'
@@ -18,21 +18,7 @@ class DataResolver {
     const data: ITotalData = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
       .total
 
-    let hungaryInfo
-    let budapestInfo
-    try {
-      hungaryInfo = await axios.get('https://restcountries.eu/rest/v2/alpha/hu')
-    } catch (e) {
-      throw new Error('Error requesting country data for HU')
-    }
-    try {
-      budapestInfo = await axios.get('https://datacommons.org/api/landingpage/data/nuts/HU101')
-    } catch (e) {
-      throw new Error('Error requesting city data for Budapest')
-    }
-
-    let population = hungaryInfo.data.population,
-      populationBudapest = budapestInfo.data.highlight.Population.data[0].data.Count_Person
+    const { populationBudapest, population } = await this.getHungaryInfo()
 
     let apiData: TotalData = {
       ...data,
@@ -60,7 +46,9 @@ class DataResolver {
   ): Promise<DayData[]> {
     if (moment(to).diff(from) < 0) throw new Error('From date is more than to date')
     const data: IDayData[] = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
-      .days
+        .days,
+      { populationBudapest, population } = await this.getHungaryInfo()
+
     let apiDays: DayData[] = []
 
     for (const day of data) {
@@ -68,11 +56,47 @@ class DataResolver {
         ...day,
         cases: day.casesBp + day.casesOthers,
         deaths: day.deathsBp + day.deathsOthers,
-        recoveries: day.recoveriesBp + day.recoveriesOthers
+        recoveries: day.recoveriesBp + day.recoveriesOthers,
+        total: {
+          ...day.total,
+          populationBudapest, // we add the population too, it might be useful
+          population,
+          caseRateBp: (day.total.casesBp / populationBudapest) * 100,
+          caseRateOthers: (day.total.casesOthers / (population - populationBudapest)) * 100,
+          caseRate: ((day.total.casesBp + day.total.casesOthers) / population) * 100,
+          recoveryRateBp: (day.total.recoveriesBp / day.total.casesBp) * 100,
+          recoveryRateOthers: (day.total.recoveriesOthers / day.total.casesOthers) * 100,
+          recoveryRate:
+            ((day.total.recoveriesBp + day.total.recoveriesOthers) / (day.total.casesBp + day.total.casesOthers)) * 100,
+          fatalityRateBp: (day.total.deathsBp / day.total.casesBp) * 100,
+          fatalityRateOthers: (day.total.deathsOthers / day.total.casesOthers) * 100,
+          fatalityRate:
+            ((day.total.deathsBp + day.total.deathsOthers) / (day.total.casesBp + day.total.casesOthers)) * 100
+        }
       })
     }
 
     return apiDays.filter(({ day }) => moment(day).isBetween(from, to) || day === from || day === to)
+  }
+
+  async getHungaryInfo(): Promise<IHungaryInfo> {
+    let hungaryInfo
+    let budapestInfo
+    try {
+      hungaryInfo = await axios.get('https://restcountries.eu/rest/v2/alpha/hu')
+    } catch (e) {
+      throw new Error(`Error requesting country data for HU: \n${e}`)
+    }
+    try {
+      budapestInfo = await axios.get('https://datacommons.org/api/landingpage/data/nuts/HU101')
+    } catch (e) {
+      throw new Error(`Error requesting city data for Budapest: \n${e}`)
+    }
+
+    let population = hungaryInfo.data.population,
+      populationBudapest = budapestInfo.data.highlight.Population.data[0].data.Count_Person
+
+    return { population, populationBudapest }
   }
 }
 

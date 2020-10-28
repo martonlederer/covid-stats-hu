@@ -79,8 +79,8 @@ export class DayData {
   recoveries: number // additional revoceries on the given day
   @Field()
   nodata: boolean // if no data is recorded that day
-  @Field()
-  total: ITotalData // total data until that day
+  @Field(() => TotalData)
+  total: TotalData // total data until that day
 }
 
 // daily data interface
@@ -95,4 +95,10 @@ export interface IDayData {
   recoveriesOthers: number
   nodata: boolean
   total: ITotalData
+}
+
+// info about the country
+export interface IHungaryInfo {
+  populationBudapest: number
+  population: number
 }
