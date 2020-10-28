@@ -90,7 +90,7 @@ let apolloHandler: (req: any, res: any) => Promise<void>
 async function loadApolloHandler() {
   if (!apolloHandler) {
     const schema = await buildSchema({ resolvers: [DataResolver] }),
-      server = new ApolloServer({ schema })
+      server = new ApolloServer({ schema, playground: true, introspection: true })
 
     apolloHandler = server.createHandler({ path: '/api/graphql' })
   }
