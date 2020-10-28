@@ -13,7 +13,8 @@
     "validate": "svelte-check",
     "fmt:pre": "cd ./node_modules/prettier-plugin-svelte/ && yarn && yarn build",
     "fmt": "prettier --write .",
-    "fmt:check": "prettier --check ."
+    "fmt:check": "prettier --check .",
+    "build:api": "cd api && tsc"
   },
   "gitHooks": {
     "pre-commit": "prettier --write . && git add -A"
