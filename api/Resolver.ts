@@ -1,7 +1,4 @@
-import 'reflect-metadata'
-import type { NowRequest, NowResponse } from '@vercel/node'
-import { ApolloServer } from 'apollo-server-micro'
-import { buildSchema, Query, Resolver, Arg } from 'type-graphql'
+import { Query, Resolver, Arg } from 'type-graphql'
 import { TotalData, ITotalData, DayData, IDayData, IHungaryInfo } from './types'
 import { promises as fs } from 'fs'
 import { join } from 'path'
@@ -11,7 +8,7 @@ import moment from 'moment-timezone'
 moment.tz.setDefault('Europe/Budapest')
 
 @Resolver()
-class DataResolver {
+export class DataResolver {
   // all time data
   @Query(() => TotalData)
   async allTime() {
@@ -98,26 +95,4 @@ class DataResolver {
 
     return { population, populationBudapest }
   }
-}
-
-export default async (req: NowRequest, res: NowResponse) => {
-  const serverHandler = await loadApolloHandler()
-  return serverHandler(req, res)
-}
-
-export const config = {
-  api: { bodyParser: false }
-}
-
-let apolloHandler: (req: any, res: any) => Promise<void>
-
-async function loadApolloHandler() {
-  if (!apolloHandler) {
-    const schema = await buildSchema({ resolvers: [DataResolver] }),
-      server = new ApolloServer({ schema, playground: true, introspection: true })
-
-    apolloHandler = server.createHandler({ path: '/api/graphql' })
-  }
-
-  return apolloHandler
 }
