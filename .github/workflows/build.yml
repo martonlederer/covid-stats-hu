@@ -1,10 +1,10 @@
-name: Build
+name: Build site
 
 on: [push, pull_request]
 
 jobs:
   build:
-    name: Build project
+    name: Build site
     runs-on: ubuntu-latest
 
     steps:
@@ -17,5 +17,5 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Build
+      - name: Build site
         run: yarn build

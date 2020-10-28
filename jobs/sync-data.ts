@@ -1,19 +1,23 @@
+import moment from 'moment-timezone'
+import axios from 'axios'
+import { readFileSync, writeFileSync } from 'fs'
+import { exit } from 'process'
+import { parse } from 'node-html-parser'
+import type { ITotalData, IDayData } from '../api/types'
+import { join } from 'path'
+
 // This file syncs the data in data.json with the API data
 // it is an automated cron-job, running every second hour, or on push
 // for more info, check .github/workflows/update-data.yml
 
-const moment = require('moment-timezone'),
-  axios = require('axios'),
-  { readFileSync, writeFileSync } = require('fs'),
-  { exit } = require('process'),
-  { parse } = require('node-html-parser'),
-  createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join(''))
+const createDataFromEl = (parsedData, el): number => Number(parsedData.querySelector(el).innerText.split(' ').join('')),
+  dataFile = join(process.cwd(), './data.json')
 
 if (!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
 
 moment.tz.setDefault('Europe/Budapest')
 
-let covidData = JSON.parse(new TextDecoder().decode(readFileSync('data.json')))
+let covidData: { total: ITotalData; days: IDayData[] } = JSON.parse(new TextDecoder().decode(readFileSync(dataFile)))
 
 axios
   .get(process.env.API_URL)
@@ -46,9 +50,10 @@ axios
         deathsOthers: 0,
         recoveriesBp: 0,
         recoveriesOthers: 0,
-        nodata: true
+        nodata: true,
+        total: previousData
       })
-      writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+      writeFileSync(dataFile, new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
       console.log("Updated yesterday's data")
     }
 
@@ -119,7 +124,7 @@ axios
 
     console.log('Calculated total data')
 
-    writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+    writeFileSync(dataFile, new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
     console.log('Wrote file')
   })
   .catch((err) => {

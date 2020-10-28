@@ -1,10 +1,10 @@
-name: Build API
+name: Build jobs
 
 on: [push, pull_request]
 
 jobs:
   build:
-    name: Build vercel functions
+    name: Build jobs
     runs-on: ubuntu-latest
 
     steps:
@@ -17,5 +17,5 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Build API
-        run: yarn build:api
+      - name: Build jobs
+        run: yarn build:jobs

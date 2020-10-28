@@ -1,0 +1,25 @@
+{
+  "exclude": ["node_modules", "./dist"],
+  "include": ["./**/*"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
+    "strict": false,
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "lib": ["esnext", "esnext.asynciterable", "dom", "es6", "es2017"],
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  }
+}
