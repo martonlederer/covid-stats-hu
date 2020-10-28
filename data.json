@@ -1645,7 +1645,8 @@
       "deathsBp": 0,
       "deathsOthers": 0,
       "recoveriesBp": 0,
-      "recoveriesOthers": 0
+      "recoveriesOthers": 0,
+      "nodata": true
     }
   ]
 }
