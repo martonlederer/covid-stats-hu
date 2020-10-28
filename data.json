@@ -1,12 +1,12 @@
 {
   "total": {
-    "tests": 1002093,
-    "casesBp": 17782,
-    "casesOthers": 45860,
-    "deathsBp": 544,
-    "deathsOthers": 991,
-    "recoveriesBp": 4766,
-    "recoveriesOthers": 11880
+    "tests": 1017689,
+    "casesBp": 18340,
+    "casesOthers": 47593,
+    "deathsBp": 547,
+    "deathsOthers": 1031,
+    "recoveriesBp": 4844,
+    "recoveriesOthers": 12254
   },
   "days": [
     {
@@ -1647,6 +1647,17 @@
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
       "nodata": true
+    },
+    {
+      "day": "2020-10-28",
+      "tests": 15596,
+      "casesBp": 558,
+      "casesOthers": 1733,
+      "deathsBp": 3,
+      "deathsOthers": 40,
+      "recoveriesBp": 78,
+      "recoveriesOthers": 374,
+      "nodata": false
     }
   ]
 }
