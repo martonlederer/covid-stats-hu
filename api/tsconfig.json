@@ -22,7 +22,7 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "rootDir": "src"
+    "rootDir": "./"
   },
   "exclude": ["node_modules"],
   "include": ["./**/*.ts"]
