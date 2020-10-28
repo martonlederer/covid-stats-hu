@@ -2,16 +2,14 @@
 // it is an automated cron-job, running every second hour, or on push
 // for more info, check .github/workflows/update-data.yml
 
-const 
-  moment = require('moment-timezone'),
+const moment = require('moment-timezone'),
   axios = require('axios'),
   { readFileSync, writeFileSync } = require('fs'),
   { exit } = require('process'),
   { parse } = require('node-html-parser'),
-
   createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join(''))
 
-if(!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
+if (!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
 
 moment.tz.setDefault('Europe/Budapest')
 
@@ -23,8 +21,7 @@ axios
     console.log('Got data from API')
 
     // get current data
-    const 
-      parsedData = parse(data),
+    const parsedData = parse(data),
       tests = createDataFromEl(parsedData, process.env.TESTS_EL),
       currentCasesBp = createDataFromEl(parsedData, process.env.CASES_PEST_EL),
       currentCasesOthers = createDataFromEl(parsedData, process.env.CASES_OTHERS_EL),
@@ -39,7 +36,7 @@ axios
     console.log('Processed/parsed data')
 
     // check if yesterday is not existing
-    if(covidData['days'].find(el => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD')) === undefined) {
+    if (covidData['days'].find((el) => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD')) === undefined) {
       covidData['days'].push({
         day: moment().subtract(1, 'days').format('YYYY-MM-DD'),
         tests: 0,
@@ -52,24 +49,26 @@ axios
         nodata: true
       })
       writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
-      console.log('Updated yesterday\'s data')
+      console.log("Updated yesterday's data")
     }
 
     // check if this day was already pushed
-    if(covidData['days'].find(el => el.day === moment().format('YYYY-MM-DD')) !== undefined) {
-      console.log('Day already pushed');
+    if (covidData['days'].find((el) => el.day === moment().format('YYYY-MM-DD')) !== undefined) {
+      console.log('Day already pushed')
       exit(0)
     }
-    
-    // let's find the last update date
-    for(const pElement of parsedData.querySelectorAll('p')) {
-      if(pElement.innerText.includes('Legutolsó frissítés dátuma:')) {
-        const lastUpdateDate = moment(new Date(pElement.innerText.replace('Legutolsó frissítés dátuma:', ''))).format('YYYY-MM-DD')
 
-        if(moment().format('YYYY-MM-DD') !== lastUpdateDate) {
+    // let's find the last update date
+    for (const pElement of parsedData.querySelectorAll('p')) {
+      if (pElement.innerText.includes('Legutolsó frissítés dátuma:')) {
+        const lastUpdateDate = moment(new Date(pElement.innerText.replace('Legutolsó frissítés dátuma:', ''))).format(
+          'YYYY-MM-DD'
+        )
+
+        if (moment().format('YYYY-MM-DD') !== lastUpdateDate) {
           console.log('Data did not yet update today...')
           exit(0)
-        }else {
+        } else {
           // only check for the first occurance
           break
         }
@@ -78,8 +77,8 @@ axios
 
     // the site did not update today
     // exit
-    if(previousData.tests === tests) {
-      console.log('Data did not update today...');
+    if (previousData.tests === tests) {
+      console.log('Data did not update today...')
       exit(0)
     }
 
@@ -96,7 +95,7 @@ axios
       nodata: false
     })
 
-    console.log('Got today\'s data')
+    console.log("Got today's data")
 
     // update total data
     covidData['total'] = {
@@ -110,7 +109,7 @@ axios
     }
 
     console.log('Calculated total data')
-    
+
     writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
     console.log('Wrote file')
   })
