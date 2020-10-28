@@ -92,7 +92,16 @@ axios
       deathsOthers: currentDeathsOthers - previousData.deathsOthers,
       recoveriesBp: currentRecoveriesBp - previousData.recoveriesBp,
       recoveriesOthers: currentRecoveriesOthers - previousData.recoveriesOthers,
-      nodata: false
+      nodata: false,
+      total: {
+        tests,
+        casesBp,
+        casesOthers,
+        deathsBp: currentDeathsBp,
+        deathsOthers: currentDeathsOthers,
+        recoveriesBp: currentRecoveriesBp,
+        recoveriesOthers: currentRecoveriesOthers
+      }
     })
 
     console.log("Got today's data")

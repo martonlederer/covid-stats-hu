@@ -18,7 +18,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 6,
       "recoveriesOthers": 3,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 187965,
+        "casesBp": 1848,
+        "casesOthers": 2044,
+        "deathsBp": 312,
+        "deathsOthers": 215,
+        "recoveriesBp": 1045,
+        "recoveriesOthers": 1111
+      }
     },
     {
       "day": "2020-06-02",
@@ -29,7 +38,16 @@
       "deathsOthers": 3,
       "recoveriesBp": 0,
       "recoveriesOthers": 4,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 189969,
+        "casesBp": 1866,
+        "casesOthers": 2055,
+        "deathsBp": 314,
+        "deathsOthers": 218,
+        "recoveriesBp": 1045,
+        "recoveriesOthers": 1115
+      }
     },
     {
       "day": "2020-06-03",
@@ -40,7 +58,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 13,
       "recoveriesOthers": 17,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 191572,
+        "casesBp": 1868,
+        "casesOthers": 2063,
+        "deathsBp": 315,
+        "deathsOthers": 219,
+        "recoveriesBp": 1058,
+        "recoveriesOthers": 1132
+      }
     },
     {
       "day": "2020-06-04",
@@ -51,7 +78,16 @@
       "deathsOthers": 3,
       "recoveriesBp": 6,
       "recoveriesOthers": 9,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 195894,
+        "casesBp": 1880,
+        "casesOthers": 2074,
+        "deathsBp": 317,
+        "deathsOthers": 222,
+        "recoveriesBp": 1064,
+        "recoveriesOthers": 1141
+      }
     },
     {
       "day": "2020-06-05",
@@ -62,7 +98,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 16,
       "recoveriesOthers": 24,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 202606,
+        "casesBp": 1886,
+        "casesOthers": 2084,
+        "deathsBp": 319,
+        "deathsOthers": 223,
+        "recoveriesBp": 1080,
+        "recoveriesOthers": 1165
+      }
     },
     {
       "day": "2020-06-06",
@@ -73,7 +118,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 19,
       "recoveriesOthers": 15,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 206853,
+        "casesBp": 1896,
+        "casesOthers": 2094,
+        "deathsBp": 322,
+        "deathsOthers": 223,
+        "recoveriesBp": 1099,
+        "recoveriesOthers": 1180
+      }
     },
     {
       "day": "2020-06-07",
@@ -84,7 +138,16 @@
       "deathsOthers": -2,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 210202,
+        "casesBp": 1904,
+        "casesOthers": 2104,
+        "deathsBp": 325,
+        "deathsOthers": 221,
+        "recoveriesBp": 1099,
+        "recoveriesOthers": 1180
+      }
     },
     {
       "day": "2020-06-08",
@@ -95,7 +158,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 5,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 210749,
+        "casesBp": 1906,
+        "casesOthers": 2108,
+        "deathsBp": 327,
+        "deathsOthers": 221,
+        "recoveriesBp": 1099,
+        "recoveriesOthers": 1185
+      }
     },
     {
       "day": "2020-06-09",
@@ -106,7 +178,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 12,
       "recoveriesOthers": 28,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 214468,
+        "casesBp": 1906,
+        "casesOthers": 2111,
+        "deathsBp": 328,
+        "deathsOthers": 222,
+        "recoveriesBp": 1111,
+        "recoveriesOthers": 1213
+      }
     },
     {
       "day": "2020-06-10",
@@ -117,7 +198,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 7,
       "recoveriesOthers": 24,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 217689,
+        "casesBp": 1910,
+        "casesOthers": 2117,
+        "deathsBp": 328,
+        "deathsOthers": 223,
+        "recoveriesBp": 1118,
+        "recoveriesOthers": 1237
+      }
     },
     {
       "day": "2020-06-11",
@@ -128,7 +218,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 25,
       "recoveriesOthers": 11,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 222247,
+        "casesBp": 1917,
+        "casesOthers": 2122,
+        "deathsBp": 329,
+        "deathsOthers": 224,
+        "recoveriesBp": 1143,
+        "recoveriesOthers": 1248
+      }
     },
     {
       "day": "2020-06-12",
@@ -139,7 +238,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 27,
       "recoveriesOthers": 29,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 226669,
+        "casesBp": 1922,
+        "casesOthers": 2131,
+        "deathsBp": 331,
+        "deathsOthers": 224,
+        "recoveriesBp": 1170,
+        "recoveriesOthers": 1277
+      }
     },
     {
       "day": "2020-06-13",
@@ -150,7 +258,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 8,
       "recoveriesOthers": 21,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 230139,
+        "casesBp": 1927,
+        "casesOthers": 2137,
+        "deathsBp": 335,
+        "deathsOthers": 224,
+        "recoveriesBp": 1178,
+        "recoveriesOthers": 1298
+      }
     },
     {
       "day": "2020-06-14",
@@ -161,7 +278,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 0,
       "recoveriesOthers": 6,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 233742,
+        "casesBp": 1930,
+        "casesOthers": 2139,
+        "deathsBp": 337,
+        "deathsOthers": 225,
+        "recoveriesBp": 1178,
+        "recoveriesOthers": 1304
+      }
     },
     {
       "day": "2020-06-15",
@@ -172,7 +298,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 2,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 235377,
+        "casesBp": 1932,
+        "casesOthers": 2144,
+        "deathsBp": 338,
+        "deathsOthers": 225,
+        "recoveriesBp": 1179,
+        "recoveriesOthers": 1306
+      }
     },
     {
       "day": "2020-06-16",
@@ -183,7 +318,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 17,
       "recoveriesOthers": 14,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 236828,
+        "casesBp": 1932,
+        "casesOthers": 2145,
+        "deathsBp": 340,
+        "deathsOthers": 225,
+        "recoveriesBp": 1196,
+        "recoveriesOthers": 1320
+      }
     },
     {
       "day": "2020-06-17",
@@ -194,7 +338,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 18,
       "recoveriesOthers": 13,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 242139,
+        "casesBp": 1932,
+        "casesOthers": 2146,
+        "deathsBp": 342,
+        "deathsOthers": 225,
+        "recoveriesBp": 1214,
+        "recoveriesOthers": 1333
+      }
     },
     {
       "day": "2020-06-18",
@@ -205,7 +358,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 7,
       "recoveriesOthers": 10,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 245598,
+        "casesBp": 1934,
+        "casesOthers": 2145,
+        "deathsBp": 342,
+        "deathsOthers": 226,
+        "recoveriesBp": 1221,
+        "recoveriesOthers": 1343
+      }
     },
     {
       "day": "2020-06-19",
@@ -216,7 +378,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 10,
       "recoveriesOthers": 7,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 249391,
+        "casesBp": 1935,
+        "casesOthers": 2146,
+        "deathsBp": 342,
+        "deathsOthers": 226,
+        "recoveriesBp": 1231,
+        "recoveriesOthers": 1350
+      }
     },
     {
       "day": "2020-06-20",
@@ -227,7 +398,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 1,
       "recoveriesOthers": 3,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 253100,
+        "casesBp": 1939,
+        "casesOthers": 2147,
+        "deathsBp": 343,
+        "deathsOthers": 227,
+        "recoveriesBp": 1232,
+        "recoveriesOthers": 1353
+      }
     },
     {
       "day": "2020-06-21",
@@ -238,7 +418,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 3,
       "recoveriesOthers": 1,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 256326,
+        "casesBp": 1943,
+        "casesOthers": 2151,
+        "deathsBp": 343,
+        "deathsOthers": 227,
+        "recoveriesBp": 1235,
+        "recoveriesOthers": 1354
+      }
     },
     {
       "day": "2020-06-22",
@@ -249,7 +438,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 258115,
+        "casesBp": 1946,
+        "casesOthers": 2156,
+        "deathsBp": 345,
+        "deathsOthers": 227,
+        "recoveriesBp": 1236,
+        "recoveriesOthers": 1354
+      }
     },
     {
       "day": "2020-06-23",
@@ -260,7 +458,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 6,
       "recoveriesOthers": 4,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 258861,
+        "casesBp": 1948,
+        "casesOthers": 2159,
+        "deathsBp": 346,
+        "deathsOthers": 227,
+        "recoveriesBp": 1242,
+        "recoveriesOthers": 1358
+      }
     },
     {
       "day": "2020-06-24",
@@ -271,7 +478,16 @@
       "deathsOthers": 2,
       "recoveriesBp": 7,
       "recoveriesOthers": 11,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 261420,
+        "casesBp": 1952,
+        "casesOthers": 2162,
+        "deathsBp": 347,
+        "deathsOthers": 229,
+        "recoveriesBp": 1249,
+        "recoveriesOthers": 1369
+      }
     },
     {
       "day": "2020-06-25",
@@ -282,7 +498,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 15,
       "recoveriesOthers": 7,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 265129,
+        "casesBp": 1957,
+        "casesOthers": 2166,
+        "deathsBp": 347,
+        "deathsOthers": 230,
+        "recoveriesBp": 1264,
+        "recoveriesOthers": 1376
+      }
     },
     {
       "day": "2020-06-26",
@@ -293,7 +518,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 14,
       "recoveriesOthers": 9,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 267056,
+        "casesBp": 1959,
+        "casesOthers": 2168,
+        "deathsBp": 347,
+        "deathsOthers": 231,
+        "recoveriesBp": 1278,
+        "recoveriesOthers": 1385
+      }
     },
     {
       "day": "2020-06-27",
@@ -304,7 +538,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 12,
       "recoveriesOthers": 6,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 270263,
+        "casesBp": 1971,
+        "casesOthers": 2167,
+        "deathsBp": 347,
+        "deathsOthers": 231,
+        "recoveriesBp": 1290,
+        "recoveriesOthers": 1391
+      }
     },
     {
       "day": "2020-06-28",
@@ -315,7 +558,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 2,
       "recoveriesOthers": 2,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 271194,
+        "casesBp": 1975,
+        "casesOthers": 2167,
+        "deathsBp": 349,
+        "deathsOthers": 232,
+        "recoveriesBp": 1292,
+        "recoveriesOthers": 1393
+      }
     },
     {
       "day": "2020-06-29",
@@ -326,7 +578,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 273897,
+        "casesBp": 1977,
+        "casesOthers": 2168,
+        "deathsBp": 353,
+        "deathsOthers": 232,
+        "recoveriesBp": 1292,
+        "recoveriesOthers": 1393
+      }
     },
     {
       "day": "2020-06-30",
@@ -337,7 +598,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 2,
       "recoveriesOthers": 5,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 274945,
+        "casesBp": 1978,
+        "casesOthers": 2177,
+        "deathsBp": 353,
+        "deathsOthers": 232,
+        "recoveriesBp": 1294,
+        "recoveriesOthers": 1398
+      }
     },
     {
       "day": "2020-07-01",
@@ -348,7 +618,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 3,
       "recoveriesOthers": 19,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 277750,
+        "casesBp": 1979,
+        "casesOthers": 2178,
+        "deathsBp": 354,
+        "deathsOthers": 232,
+        "recoveriesBp": 1297,
+        "recoveriesOthers": 1417
+      }
     },
     {
       "day": "2020-07-02",
@@ -359,7 +638,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 7,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 279690,
+        "casesBp": 1983,
+        "casesOthers": 2183,
+        "deathsBp": 355,
+        "deathsOthers": 232,
+        "recoveriesBp": 1297,
+        "recoveriesOthers": 1424
+      }
     },
     {
       "day": "2020-07-03",
@@ -370,7 +658,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 9,
       "recoveriesOthers": 22,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 281628,
+        "casesBp": 1984,
+        "casesOthers": 2188,
+        "deathsBp": 355,
+        "deathsOthers": 233,
+        "recoveriesBp": 1306,
+        "recoveriesOthers": 1446
+      }
     },
     {
       "day": "2020-07-04",
@@ -381,7 +678,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 8,
       "recoveriesOthers": 24,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 283508,
+        "casesBp": 1986,
+        "casesOthers": 2188,
+        "deathsBp": 355,
+        "deathsOthers": 234,
+        "recoveriesBp": 1314,
+        "recoveriesOthers": 1470
+      }
     },
     {
       "day": "2020-07-05",
@@ -392,7 +698,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 6,
       "recoveriesOthers": 21,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 285590,
+        "casesBp": 1988,
+        "casesOthers": 2195,
+        "deathsBp": 355,
+        "deathsOthers": 234,
+        "recoveriesBp": 1320,
+        "recoveriesOthers": 1491
+      }
     },
     {
       "day": "2020-07-06",
@@ -403,7 +718,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 15,
       "recoveriesOthers": 34,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 286083,
+        "casesBp": 1988,
+        "casesOthers": 2201,
+        "deathsBp": 355,
+        "deathsOthers": 234,
+        "recoveriesBp": 1335,
+        "recoveriesOthers": 1525
+      }
     },
     {
       "day": "2020-07-07",
@@ -414,7 +738,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 7,
       "recoveriesOthers": 7,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 286983,
+        "casesBp": 1988,
+        "casesOthers": 2217,
+        "deathsBp": 355,
+        "deathsOthers": 234,
+        "recoveriesBp": 1342,
+        "recoveriesOthers": 1532
+      }
     },
     {
       "day": "2020-07-08",
@@ -425,7 +758,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 7,
       "recoveriesOthers": 4,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 288693,
+        "casesBp": 1988,
+        "casesOthers": 2222,
+        "deathsBp": 355,
+        "deathsOthers": 234,
+        "recoveriesBp": 1349,
+        "recoveriesOthers": 1536
+      }
     },
     {
       "day": "2020-07-09",
@@ -436,7 +778,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 2,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 289602,
+        "casesBp": 1988,
+        "casesOthers": 2232,
+        "deathsBp": 357,
+        "deathsOthers": 234,
+        "recoveriesBp": 1349,
+        "recoveriesOthers": 1538
+      }
     },
     {
       "day": "2020-07-10",
@@ -447,7 +798,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 16,
       "recoveriesOthers": 38,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 292032,
+        "casesBp": 1988,
+        "casesOthers": 2235,
+        "deathsBp": 358,
+        "deathsOthers": 235,
+        "recoveriesBp": 1365,
+        "recoveriesOthers": 1576
+      }
     },
     {
       "day": "2020-07-11",
@@ -458,7 +818,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 10,
       "recoveriesOthers": 23,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 293220,
+        "casesBp": 1989,
+        "casesOthers": 2240,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1375,
+        "recoveriesOthers": 1599
+      }
     },
     {
       "day": "2020-07-12",
@@ -469,7 +838,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 25,
       "recoveriesOthers": 37,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 294425,
+        "casesBp": 1992,
+        "casesOthers": 2242,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1400,
+        "recoveriesOthers": 1636
+      }
     },
     {
       "day": "2020-07-13",
@@ -480,7 +858,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 9,
       "recoveriesOthers": 28,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 295561,
+        "casesBp": 1993,
+        "casesOthers": 2254,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1409,
+        "recoveriesOthers": 1664
+      }
     },
     {
       "day": "2020-07-14",
@@ -491,7 +878,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 10,
       "recoveriesOthers": 23,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 296358,
+        "casesBp": 1994,
+        "casesOthers": 2264,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1419,
+        "recoveriesOthers": 1687
+      }
     },
     {
       "day": "2020-07-15",
@@ -502,7 +898,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 8,
       "recoveriesOthers": 13,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 299185,
+        "casesBp": 1997,
+        "casesOthers": 2266,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1427,
+        "recoveriesOthers": 1700
+      }
     },
     {
       "day": "2020-07-16",
@@ -513,7 +918,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 16,
       "recoveriesOthers": 13,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 300632,
+        "casesBp": 2001,
+        "casesOthers": 2278,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1443,
+        "recoveriesOthers": 1713
+      }
     },
     {
       "day": "2020-07-17",
@@ -524,7 +938,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 25,
       "recoveriesOthers": 39,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 302749,
+        "casesBp": 2006,
+        "casesOthers": 2287,
+        "deathsBp": 360,
+        "deathsOthers": 235,
+        "recoveriesBp": 1468,
+        "recoveriesOthers": 1752
+      }
     },
     {
       "day": "2020-07-18",
@@ -535,7 +958,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 2,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 305133,
+        "casesBp": 2009,
+        "casesOthers": 2306,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1468,
+        "recoveriesOthers": 1754
+      }
     },
     {
       "day": "2020-07-19",
@@ -546,7 +978,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 1,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 307846,
+        "casesBp": 2012,
+        "casesOthers": 2321,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1468,
+        "recoveriesOthers": 1755
+      }
     },
     {
       "day": "2020-07-20",
@@ -557,7 +998,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 8,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 310070,
+        "casesBp": 2014,
+        "casesOthers": 2325,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1469,
+        "recoveriesOthers": 1763
+      }
     },
     {
       "day": "2020-07-21",
@@ -568,7 +1018,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 6,
       "recoveriesOthers": 19,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 310930,
+        "casesBp": 2014,
+        "casesOthers": 2333,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1475,
+        "recoveriesOthers": 1782
+      }
     },
     {
       "day": "2020-07-22",
@@ -579,7 +1038,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 12,
       "recoveriesOthers": 14,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 312988,
+        "casesBp": 2019,
+        "casesOthers": 2347,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1487,
+        "recoveriesOthers": 1796
+      }
     },
     {
       "day": "2020-07-23",
@@ -590,7 +1058,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 16,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 316120,
+        "casesBp": 2019,
+        "casesOthers": 2361,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1488,
+        "recoveriesOthers": 1812
+      }
     },
     {
       "day": "2020-07-24",
@@ -601,7 +1078,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 6,
       "recoveriesOthers": 6,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 319854,
+        "casesBp": 2021,
+        "casesOthers": 2377,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1494,
+        "recoveriesOthers": 1818
+      }
     },
     {
       "day": "2020-07-25",
@@ -612,7 +1098,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 11,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 323673,
+        "casesBp": 2028,
+        "casesOthers": 2396,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1495,
+        "recoveriesOthers": 1829
+      }
     },
     {
       "day": "2020-07-26",
@@ -623,7 +1118,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 2,
       "recoveriesOthers": 3,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 326554,
+        "casesBp": 2029,
+        "casesOthers": 2406,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1497,
+        "recoveriesOthers": 1832
+      }
     },
     {
       "day": "2020-07-27",
@@ -634,7 +1138,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 328583,
+        "casesBp": 2032,
+        "casesOthers": 2416,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1497,
+        "recoveriesOthers": 1832
+      }
     },
     {
       "day": "2020-07-28",
@@ -645,7 +1158,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 1,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 330239,
+        "casesBp": 2034,
+        "casesOthers": 2422,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1498,
+        "recoveriesOthers": 1833
+      }
     },
     {
       "day": "2020-07-29",
@@ -656,7 +1178,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 2,
       "recoveriesOthers": 6,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 333446,
+        "casesBp": 2037,
+        "casesOthers": 2428,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1500,
+        "recoveriesOthers": 1839
+      }
     },
     {
       "day": "2020-07-30",
@@ -667,7 +1198,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 6,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 336461,
+        "casesBp": 2044,
+        "casesOthers": 2440,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1501,
+        "recoveriesOthers": 1845
+      }
     },
     {
       "day": "2020-07-31",
@@ -678,7 +1218,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 7,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 339163,
+        "casesBp": 2053,
+        "casesOthers": 2452,
+        "deathsBp": 361,
+        "deathsOthers": 235,
+        "recoveriesBp": 1501,
+        "recoveriesOthers": 1852
+      }
     },
     {
       "day": "2020-08-01",
@@ -689,7 +1238,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 1,
       "recoveriesOthers": 10,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 342887,
+        "casesBp": 2061,
+        "casesOthers": 2465,
+        "deathsBp": 361,
+        "deathsOthers": 236,
+        "recoveriesBp": 1502,
+        "recoveriesOthers": 1862
+      }
     },
     {
       "day": "2020-08-02",
@@ -700,7 +1258,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 4,
       "recoveriesOthers": 21,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 344997,
+        "casesBp": 2062,
+        "casesOthers": 2473,
+        "deathsBp": 361,
+        "deathsOthers": 236,
+        "recoveriesBp": 1506,
+        "recoveriesOthers": 1883
+      }
     },
     {
       "day": "2020-08-03",
@@ -711,7 +1278,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 5,
       "recoveriesOthers": 19,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 346962,
+        "casesBp": 2065,
+        "casesOthers": 2479,
+        "deathsBp": 361,
+        "deathsOthers": 236,
+        "recoveriesBp": 1511,
+        "recoveriesOthers": 1902
+      }
     },
     {
       "day": "2020-08-04",
@@ -722,7 +1298,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 2,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 348132,
+        "casesBp": 2067,
+        "casesOthers": 2486,
+        "deathsBp": 361,
+        "deathsOthers": 237,
+        "recoveriesBp": 1513,
+        "recoveriesOthers": 1902
+      }
     },
     {
       "day": "2020-08-05",
@@ -733,7 +1318,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 4,
       "recoveriesOthers": 12,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 350108,
+        "casesBp": 2067,
+        "casesOthers": 2497,
+        "deathsBp": 362,
+        "deathsOthers": 237,
+        "recoveriesBp": 1517,
+        "recoveriesOthers": 1914
+      }
     },
     {
       "day": "2020-08-06",
@@ -744,7 +1338,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 5,
       "recoveriesOthers": 27,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 352546,
+        "casesBp": 2069,
+        "casesOthers": 2528,
+        "deathsBp": 362,
+        "deathsOthers": 238,
+        "recoveriesBp": 1522,
+        "recoveriesOthers": 1941
+      }
     },
     {
       "day": "2020-08-07",
@@ -755,7 +1358,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 0,
       "recoveriesOthers": 1,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 355467,
+        "casesBp": 2074,
+        "casesOthers": 2547,
+        "deathsBp": 363,
+        "deathsOthers": 239,
+        "recoveriesBp": 1522,
+        "recoveriesOthers": 1942
+      }
     },
     {
       "day": "2020-08-08",
@@ -766,7 +1378,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 26,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 358437,
+        "casesBp": 2081,
+        "casesOthers": 2572,
+        "deathsBp": 363,
+        "deathsOthers": 239,
+        "recoveriesBp": 1523,
+        "recoveriesOthers": 1968
+      }
     },
     {
       "day": "2020-08-09",
@@ -777,7 +1398,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 5,
       "recoveriesOthers": 3,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 360772,
+        "casesBp": 2091,
+        "casesOthers": 2605,
+        "deathsBp": 363,
+        "deathsOthers": 239,
+        "recoveriesBp": 1528,
+        "recoveriesOthers": 1971
+      }
     },
     {
       "day": "2020-08-10",
@@ -788,7 +1418,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 21,
       "recoveriesOthers": 5,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 362660,
+        "casesBp": 2099,
+        "casesOthers": 2632,
+        "deathsBp": 365,
+        "deathsOthers": 240,
+        "recoveriesBp": 1549,
+        "recoveriesOthers": 1976
+      }
     },
     {
       "day": "2020-08-11",
@@ -799,7 +1438,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 2,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 363459,
+        "casesBp": 2100,
+        "casesOthers": 2646,
+        "deathsBp": 365,
+        "deathsOthers": 240,
+        "recoveriesBp": 1549,
+        "recoveriesOthers": 1978
+      }
     },
     {
       "day": "2020-08-12",
@@ -810,7 +1458,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 2,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 366356,
+        "casesBp": 2102,
+        "casesOthers": 2666,
+        "deathsBp": 365,
+        "deathsOthers": 240,
+        "recoveriesBp": 1551,
+        "recoveriesOthers": 1978
+      }
     },
     {
       "day": "2020-08-13",
@@ -821,7 +1478,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 3,
       "recoveriesOthers": 29,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 369545,
+        "casesBp": 2114,
+        "casesOthers": 2699,
+        "deathsBp": 366,
+        "deathsOthers": 241,
+        "recoveriesBp": 1554,
+        "recoveriesOthers": 2007
+      }
     },
     {
       "day": "2020-08-14",
@@ -832,7 +1498,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 4,
       "recoveriesOthers": 25,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 372687,
+        "casesBp": 2126,
+        "casesOthers": 2727,
+        "deathsBp": 366,
+        "deathsOthers": 241,
+        "recoveriesBp": 1558,
+        "recoveriesOthers": 2032
+      }
     },
     {
       "day": "2020-08-15",
@@ -843,7 +1518,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 2,
       "recoveriesOthers": 14,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 375685,
+        "casesBp": 2132,
+        "casesOthers": 2745,
+        "deathsBp": 366,
+        "deathsOthers": 241,
+        "recoveriesBp": 1560,
+        "recoveriesOthers": 2046
+      }
     },
     {
       "day": "2020-08-16",
@@ -854,7 +1538,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 1,
       "recoveriesOthers": 16,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 378608,
+        "casesBp": 2142,
+        "casesOthers": 2774,
+        "deathsBp": 366,
+        "deathsOthers": 242,
+        "recoveriesBp": 1561,
+        "recoveriesOthers": 2062
+      }
     },
     {
       "day": "2020-08-17",
@@ -865,7 +1558,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 3,
       "recoveriesOthers": 4,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 380932,
+        "casesBp": 2154,
+        "casesOthers": 2792,
+        "deathsBp": 366,
+        "deathsOthers": 242,
+        "recoveriesBp": 1564,
+        "recoveriesOthers": 2066
+      }
     },
     {
       "day": "2020-08-18",
@@ -876,7 +1578,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 0,
       "recoveriesOthers": 1,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 383411,
+        "casesBp": 2163,
+        "casesOthers": 2807,
+        "deathsBp": 366,
+        "deathsOthers": 243,
+        "recoveriesBp": 1564,
+        "recoveriesOthers": 2067
+      }
     },
     {
       "day": "2020-08-19",
@@ -887,7 +1598,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 383411,
+        "casesBp": 2163,
+        "casesOthers": 2807,
+        "deathsBp": 366,
+        "deathsOthers": 243,
+        "recoveriesBp": 1564,
+        "recoveriesOthers": 2067
+      }
     },
     {
       "day": "2020-08-20",
@@ -898,7 +1618,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 8,
       "recoveriesOthers": 39,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 390079,
+        "casesBp": 2198,
+        "casesOthers": 2848,
+        "deathsBp": 366,
+        "deathsOthers": 243,
+        "recoveriesBp": 1572,
+        "recoveriesOthers": 2106
+      }
     },
     {
       "day": "2020-08-21",
@@ -909,7 +1638,16 @@
       "deathsOthers": 2,
       "recoveriesBp": 1,
       "recoveriesOthers": 13,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 394911,
+        "casesBp": 2229,
+        "casesOthers": 2904,
+        "deathsBp": 366,
+        "deathsOthers": 245,
+        "recoveriesBp": 1573,
+        "recoveriesOthers": 2119
+      }
     },
     {
       "day": "2020-08-22",
@@ -920,7 +1658,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 394911,
+        "casesBp": 2229,
+        "casesOthers": 2904,
+        "deathsBp": 366,
+        "deathsOthers": 245,
+        "recoveriesBp": 1573,
+        "recoveriesOthers": 2119
+      }
     },
     {
       "day": "2020-08-23",
@@ -931,7 +1678,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 394911,
+        "casesBp": 2229,
+        "casesOthers": 2904,
+        "deathsBp": 366,
+        "deathsOthers": 245,
+        "recoveriesBp": 1573,
+        "recoveriesOthers": 2119
+      }
     },
     {
       "day": "2020-08-24",
@@ -942,7 +1698,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 3,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 398550,
+        "casesBp": 2256,
+        "casesOthers": 2935,
+        "deathsBp": 368,
+        "deathsOthers": 245,
+        "recoveriesBp": 1576,
+        "recoveriesOthers": 2119
+      }
     },
     {
       "day": "2020-08-25",
@@ -953,7 +1718,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 1,
       "recoveriesOthers": 20,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 400442,
+        "casesBp": 2267,
+        "casesOthers": 2948,
+        "deathsBp": 369,
+        "deathsOthers": 245,
+        "recoveriesBp": 1577,
+        "recoveriesOthers": 2139
+      }
     },
     {
       "day": "2020-08-26",
@@ -964,7 +1738,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 3,
       "recoveriesOthers": 15,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 405067,
+        "casesBp": 2302,
+        "casesOthers": 2986,
+        "deathsBp": 369,
+        "deathsOthers": 245,
+        "recoveriesBp": 1580,
+        "recoveriesOthers": 2154
+      }
     },
     {
       "day": "2020-08-27",
@@ -975,7 +1758,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 405067,
+        "casesBp": 2302,
+        "casesOthers": 2986,
+        "deathsBp": 369,
+        "deathsOthers": 245,
+        "recoveriesBp": 1580,
+        "recoveriesOthers": 2154
+      }
     },
     {
       "day": "2020-08-28",
@@ -986,7 +1778,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 2,
       "recoveriesOthers": 23,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 417890,
+        "casesBp": 2468,
+        "casesOthers": 3201,
+        "deathsBp": 369,
+        "deathsOthers": 245,
+        "recoveriesBp": 1582,
+        "recoveriesOthers": 2177
+      }
     },
     {
       "day": "2020-08-29",
@@ -997,7 +1798,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 417890,
+        "casesBp": 2468,
+        "casesOthers": 3201,
+        "deathsBp": 369,
+        "deathsOthers": 245,
+        "recoveriesBp": 1582,
+        "recoveriesOthers": 2177
+      }
     },
     {
       "day": "2020-08-30",
@@ -1008,7 +1818,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 417890,
+        "casesBp": 2468,
+        "casesOthers": 3201,
+        "deathsBp": 369,
+        "deathsOthers": 245,
+        "recoveriesBp": 1582,
+        "recoveriesOthers": 2177
+      }
     },
     {
       "day": "2020-08-31",
@@ -1019,7 +1838,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 1,
       "recoveriesOthers": 1,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 428150,
+        "casesBp": 2700,
+        "casesOthers": 3439,
+        "deathsBp": 369,
+        "deathsOthers": 246,
+        "recoveriesBp": 1583,
+        "recoveriesOthers": 2178
+      }
     },
     {
       "day": "2020-09-01",
@@ -1030,7 +1858,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 14,
       "recoveriesOthers": 46,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 429942,
+        "casesBp": 2762,
+        "casesOthers": 3495,
+        "deathsBp": 370,
+        "deathsOthers": 246,
+        "recoveriesBp": 1597,
+        "recoveriesOthers": 2224
+      }
     },
     {
       "day": "2020-09-02",
@@ -1041,7 +1878,16 @@
       "deathsOthers": 4,
       "recoveriesBp": 57,
       "recoveriesOthers": 52,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 445047,
+        "casesBp": 3076,
+        "casesOthers": 3847,
+        "deathsBp": 370,
+        "deathsOthers": 250,
+        "recoveriesBp": 1654,
+        "recoveriesOthers": 2276
+      }
     },
     {
       "day": "2020-09-03",
@@ -1052,7 +1898,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 445047,
+        "casesBp": 3076,
+        "casesOthers": 3847,
+        "deathsBp": 370,
+        "deathsOthers": 250,
+        "recoveriesBp": 1654,
+        "recoveriesOthers": 2276
+      }
     },
     {
       "day": "2020-09-04",
@@ -1063,7 +1918,16 @@
       "deathsOthers": 1,
       "recoveriesBp": 4,
       "recoveriesOthers": 10,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 452138,
+        "casesBp": 3262,
+        "casesOthers": 4120,
+        "deathsBp": 370,
+        "deathsOthers": 251,
+        "recoveriesBp": 1658,
+        "recoveriesOthers": 2286
+      }
     },
     {
       "day": "2020-09-05",
@@ -1074,7 +1938,16 @@
       "deathsOthers": 2,
       "recoveriesBp": 2,
       "recoveriesOthers": 6,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 460235,
+        "casesBp": 3471,
+        "casesOthers": 4421,
+        "deathsBp": 371,
+        "deathsOthers": 253,
+        "recoveriesBp": 1660,
+        "recoveriesOthers": 2292
+      }
     },
     {
       "day": "2020-09-06",
@@ -1085,7 +1958,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 470000,
+        "casesBp": 3669,
+        "casesOthers": 4718,
+        "deathsBp": 371,
+        "deathsOthers": 253,
+        "recoveriesBp": 1660,
+        "recoveriesOthers": 2292
+      }
     },
     {
       "day": "2020-09-07",
@@ -1096,7 +1978,16 @@
       "deathsOthers": 2,
       "recoveriesBp": 5,
       "recoveriesOthers": 15,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 487146,
+        "casesBp": 4069,
+        "casesOthers": 5235,
+        "deathsBp": 371,
+        "deathsOthers": 255,
+        "recoveriesBp": 1665,
+        "recoveriesOthers": 2307
+      }
     },
     {
       "day": "2020-09-08",
@@ -1107,7 +1998,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 487146,
+        "casesBp": 4069,
+        "casesOthers": 5235,
+        "deathsBp": 371,
+        "deathsOthers": 255,
+        "recoveriesBp": 1665,
+        "recoveriesOthers": 2307
+      }
     },
     {
       "day": "2020-09-09",
@@ -1118,7 +2018,16 @@
       "deathsOthers": 2,
       "recoveriesBp": 4,
       "recoveriesOthers": 8,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 495481,
+        "casesBp": 4260,
+        "casesOthers": 5455,
+        "deathsBp": 371,
+        "deathsOthers": 257,
+        "recoveriesBp": 1669,
+        "recoveriesOthers": 2315
+      }
     },
     {
       "day": "2020-09-10",
@@ -1129,7 +2038,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 495481,
+        "casesBp": 4260,
+        "casesOthers": 5455,
+        "deathsBp": 371,
+        "deathsOthers": 257,
+        "recoveriesBp": 1669,
+        "recoveriesOthers": 2315
+      }
     },
     {
       "day": "2020-09-11",
@@ -1140,7 +2058,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 495481,
+        "casesBp": 4260,
+        "casesOthers": 5455,
+        "deathsBp": 371,
+        "deathsOthers": 257,
+        "recoveriesBp": 1669,
+        "recoveriesOthers": 2315
+      }
     },
     {
       "day": "2020-09-12",
@@ -1151,7 +2078,16 @@
       "deathsOthers": 5,
       "recoveriesBp": 30,
       "recoveriesOthers": 44,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 529063,
+        "casesBp": 5092,
+        "casesOthers": 6733,
+        "deathsBp": 371,
+        "deathsOthers": 262,
+        "recoveriesBp": 1699,
+        "recoveriesOthers": 2359
+      }
     },
     {
       "day": "2020-09-13",
@@ -1162,7 +2098,16 @@
       "deathsOthers": 3,
       "recoveriesBp": 4,
       "recoveriesOthers": 7,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 537897,
+        "casesBp": 5330,
+        "casesOthers": 6979,
+        "deathsBp": 372,
+        "deathsOthers": 265,
+        "recoveriesBp": 1703,
+        "recoveriesOthers": 2366
+      }
     },
     {
       "day": "2020-09-14",
@@ -1173,7 +2118,16 @@
       "deathsOthers": 5,
       "recoveriesBp": 9,
       "recoveriesOthers": 39,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 549211,
+        "casesBp": 5638,
+        "casesOthers": 7515,
+        "deathsBp": 372,
+        "deathsOthers": 270,
+        "recoveriesBp": 1712,
+        "recoveriesOthers": 2405
+      }
     },
     {
       "day": "2020-09-15",
@@ -1184,7 +2138,16 @@
       "deathsOthers": 3,
       "recoveriesBp": 3,
       "recoveriesOthers": 10,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 557864,
+        "casesBp": 5992,
+        "casesOthers": 7887,
+        "deathsBp": 373,
+        "deathsOthers": 273,
+        "recoveriesBp": 1715,
+        "recoveriesOthers": 2415
+      }
     },
     {
       "day": "2020-09-16",
@@ -1195,7 +2158,16 @@
       "deathsOthers": 4,
       "recoveriesBp": 10,
       "recoveriesOthers": 13,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 567691,
+        "casesBp": 6202,
+        "casesOthers": 8258,
+        "deathsBp": 377,
+        "deathsOthers": 277,
+        "recoveriesBp": 1725,
+        "recoveriesOthers": 2428
+      }
     },
     {
       "day": "2020-09-17",
@@ -1206,7 +2178,16 @@
       "deathsOthers": 4,
       "recoveriesBp": 21,
       "recoveriesOthers": 53,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 580072,
+        "casesBp": 6501,
+        "casesOthers": 8669,
+        "deathsBp": 382,
+        "deathsOthers": 281,
+        "recoveriesBp": 1746,
+        "recoveriesOthers": 2481
+      }
     },
     {
       "day": "2020-09-18",
@@ -1217,7 +2198,16 @@
       "deathsOthers": 5,
       "recoveriesBp": 10,
       "recoveriesOthers": 52,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 580072,
+        "casesBp": 6501,
+        "casesOthers": 8669,
+        "deathsBp": 382,
+        "deathsOthers": 281,
+        "recoveriesBp": 1746,
+        "recoveriesOthers": 2481
+      }
     },
     {
       "day": "2020-09-19",
@@ -1228,7 +2218,16 @@
       "deathsOthers": 6,
       "recoveriesBp": 17,
       "recoveriesOthers": 85,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 615999,
+        "casesBp": 7473,
+        "casesOthers": 10517,
+        "deathsBp": 391,
+        "deathsOthers": 292,
+        "recoveriesBp": 1773,
+        "recoveriesOthers": 2618
+      }
     },
     {
       "day": "2020-09-20",
@@ -1239,7 +2238,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 615999,
+        "casesBp": 7473,
+        "casesOthers": 10517,
+        "deathsBp": 391,
+        "deathsOthers": 292,
+        "recoveriesBp": 1773,
+        "recoveriesOthers": 2618
+      }
     },
     {
       "day": "2020-09-21",
@@ -1250,7 +2258,16 @@
       "deathsOthers": 2,
       "recoveriesBp": 6,
       "recoveriesOthers": 4,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 626021,
+        "casesBp": 7735,
+        "casesOthers": 11131,
+        "deathsBp": 392,
+        "deathsOthers": 294,
+        "recoveriesBp": 1779,
+        "recoveriesOthers": 2622
+      }
     },
     {
       "day": "2020-09-22",
@@ -1261,7 +2278,16 @@
       "deathsOthers": 7,
       "recoveriesBp": 48,
       "recoveriesOthers": 110,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 632031,
+        "casesBp": 7884,
+        "casesOthers": 11615,
+        "deathsBp": 393,
+        "deathsOthers": 301,
+        "recoveriesBp": 1827,
+        "recoveriesOthers": 2732
+      }
     },
     {
       "day": "2020-09-23",
@@ -1272,7 +2298,16 @@
       "deathsOthers": 8,
       "recoveriesBp": 32,
       "recoveriesOthers": 53,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 645492,
+        "casesBp": 8115,
+        "casesOthers": 12335,
+        "deathsBp": 393,
+        "deathsOthers": 309,
+        "recoveriesBp": 1859,
+        "recoveriesOthers": 2785
+      }
     },
     {
       "day": "2020-09-24",
@@ -1283,7 +2318,16 @@
       "deathsOthers": 4,
       "recoveriesBp": 38,
       "recoveriesOthers": 136,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 657437,
+        "casesBp": 8338,
+        "casesOthers": 12862,
+        "deathsBp": 396,
+        "deathsOthers": 313,
+        "recoveriesBp": 1897,
+        "recoveriesOthers": 2921
+      }
     },
     {
       "day": "2020-09-25",
@@ -1294,7 +2338,16 @@
       "deathsOthers": 17,
       "recoveriesBp": 84,
       "recoveriesOthers": 197,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 680335,
+        "casesBp": 8853,
+        "casesOthers": 14224,
+        "deathsBp": 400,
+        "deathsOthers": 330,
+        "recoveriesBp": 1981,
+        "recoveriesOthers": 3118
+      }
     },
     {
       "day": "2020-09-26",
@@ -1305,7 +2358,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 680335,
+        "casesBp": 8853,
+        "casesOthers": 14224,
+        "deathsBp": 400,
+        "deathsOthers": 330,
+        "recoveriesBp": 1981,
+        "recoveriesOthers": 3118
+      }
     },
     {
       "day": "2020-09-27",
@@ -1316,7 +2378,16 @@
       "deathsOthers": 6,
       "recoveriesBp": 12,
       "recoveriesOthers": 30,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 690408,
+        "casesBp": 9153,
+        "casesOthers": 14861,
+        "deathsBp": 400,
+        "deathsOthers": 336,
+        "recoveriesBp": 1993,
+        "recoveriesOthers": 3148
+      }
     },
     {
       "day": "2020-09-28",
@@ -1327,7 +2398,16 @@
       "deathsOthers": 16,
       "recoveriesBp": 12,
       "recoveriesOthers": 20,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 704510,
+        "casesBp": 9650,
+        "casesOthers": 15917,
+        "deathsBp": 405,
+        "deathsOthers": 352,
+        "recoveriesBp": 2005,
+        "recoveriesOthers": 3168
+      }
     },
     {
       "day": "2020-09-29",
@@ -1338,7 +2418,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 704510,
+        "casesBp": 9650,
+        "casesOthers": 15917,
+        "deathsBp": 405,
+        "deathsOthers": 352,
+        "recoveriesBp": 2005,
+        "recoveriesOthers": 3168
+      }
     },
     {
       "day": "2020-09-30",
@@ -1349,7 +2438,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 704510,
+        "casesBp": 9650,
+        "casesOthers": 15917,
+        "deathsBp": 405,
+        "deathsOthers": 352,
+        "recoveriesBp": 2005,
+        "recoveriesOthers": 3168
+      }
     },
     {
       "day": "2020-10-01",
@@ -1360,7 +2458,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 704510,
+        "casesBp": 9650,
+        "casesOthers": 15917,
+        "deathsBp": 405,
+        "deathsOthers": 352,
+        "recoveriesBp": 2005,
+        "recoveriesOthers": 3168
+      }
     },
     {
       "day": "2020-10-02",
@@ -1371,7 +2478,16 @@
       "deathsOthers": 50,
       "recoveriesBp": 514,
       "recoveriesOthers": 1783,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 759174,
+        "casesBp": 11016,
+        "casesOthers": 19559,
+        "deathsBp": 420,
+        "deathsOthers": 402,
+        "recoveriesBp": 2519,
+        "recoveriesOthers": 4951
+      }
     },
     {
       "day": "2020-10-03",
@@ -1382,7 +2498,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 759174,
+        "casesBp": 11016,
+        "casesOthers": 19559,
+        "deathsBp": 420,
+        "deathsOthers": 402,
+        "recoveriesBp": 2519,
+        "recoveriesOthers": 4951
+      }
     },
     {
       "day": "2020-10-04",
@@ -1393,7 +2518,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 759174,
+        "casesBp": 11016,
+        "casesOthers": 19559,
+        "deathsBp": 420,
+        "deathsOthers": 402,
+        "recoveriesBp": 2519,
+        "recoveriesOthers": 4951
+      }
     },
     {
       "day": "2020-10-05",
@@ -1404,7 +2538,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 765598,
+        "casesBp": 11232,
+        "casesOthers": 20248,
+        "deathsBp": 421,
+        "deathsOthers": 412,
+        "recoveriesBp": 2840,
+        "recoveriesOthers": 5325
+      }
     },
     {
       "day": "2020-10-06",
@@ -1415,7 +2558,16 @@
       "deathsOthers": 28,
       "recoveriesBp": 441,
       "recoveriesOthers": 812,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 771297,
+        "casesBp": 11425,
+        "casesOthers": 20873,
+        "deathsBp": 423,
+        "deathsOthers": 430,
+        "recoveriesBp": 2960,
+        "recoveriesOthers": 5763
+      }
     },
     {
       "day": "2020-10-07",
@@ -1426,7 +2578,16 @@
       "deathsOthers": 20,
       "recoveriesBp": 98,
       "recoveriesOthers": 328,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 781023,
+        "casesBp": 11573,
+        "casesOthers": 21541,
+        "deathsBp": 427,
+        "deathsOthers": 450,
+        "recoveriesBp": 3058,
+        "recoveriesOthers": 6091
+      }
     },
     {
       "day": "2020-10-08",
@@ -1437,7 +2598,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 781023,
+        "casesBp": 11573,
+        "casesOthers": 21541,
+        "deathsBp": 427,
+        "deathsOthers": 450,
+        "recoveriesBp": 3058,
+        "recoveriesOthers": 6091
+      }
     },
     {
       "day": "2020-10-09",
@@ -1448,7 +2618,16 @@
       "deathsOthers": 61,
       "recoveriesBp": 455,
       "recoveriesOthers": 1244,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 825570,
+        "casesBp": 12546,
+        "casesOthers": 25118,
+        "deathsBp": 443,
+        "deathsOthers": 511,
+        "recoveriesBp": 3513,
+        "recoveriesOthers": 7335
+      }
     },
     {
       "day": "2020-10-10",
@@ -1459,7 +2638,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 825570,
+        "casesBp": 12546,
+        "casesOthers": 25118,
+        "deathsBp": 443,
+        "deathsOthers": 511,
+        "recoveriesBp": 3513,
+        "recoveriesOthers": 7335
+      }
     },
     {
       "day": "2020-10-11",
@@ -1470,7 +2658,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 825570,
+        "casesBp": 12546,
+        "casesOthers": 25118,
+        "deathsBp": 443,
+        "deathsOthers": 511,
+        "recoveriesBp": 3513,
+        "recoveriesOthers": 7335
+      }
     },
     {
       "day": "2020-10-12",
@@ -1481,7 +2678,16 @@
       "deathsOthers": 14,
       "recoveriesBp": 37,
       "recoveriesOthers": 152,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 834097,
+        "casesBp": 12843,
+        "casesOthers": 25994,
+        "deathsBp": 443,
+        "deathsOthers": 525,
+        "recoveriesBp": 3550,
+        "recoveriesOthers": 7487
+      }
     },
     {
       "day": "2020-10-13",
@@ -1492,7 +2698,16 @@
       "deathsOthers": 25,
       "recoveriesBp": 176,
       "recoveriesOthers": 540,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 841220,
+        "casesBp": 13036,
+        "casesOthers": 26826,
+        "deathsBp": 446,
+        "deathsOthers": 550,
+        "recoveriesBp": 3726,
+        "recoveriesOthers": 8027
+      }
     },
     {
       "day": "2020-10-14",
@@ -1503,7 +2718,16 @@
       "deathsOthers": 24,
       "recoveriesBp": 88,
       "recoveriesOthers": 323,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 850878,
+        "casesBp": 13233,
+        "casesOthers": 27549,
+        "deathsBp": 449,
+        "deathsOthers": 574,
+        "recoveriesBp": 3814,
+        "recoveriesOthers": 8350
+      }
     },
     {
       "day": "2020-10-15",
@@ -1514,7 +2738,16 @@
       "deathsOthers": 23,
       "recoveriesBp": 72,
       "recoveriesOthers": 392,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 861620,
+        "casesBp": 13526,
+        "casesOthers": 28206,
+        "deathsBp": 455,
+        "deathsOthers": 597,
+        "recoveriesBp": 3886,
+        "recoveriesOthers": 8742
+      }
     },
     {
       "day": "2020-10-16",
@@ -1525,7 +2758,16 @@
       "deathsOthers": 47,
       "recoveriesBp": 227,
       "recoveriesOthers": 725,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 884388,
+        "casesBp": 14173,
+        "casesOthers": 30643,
+        "deathsBp": 465,
+        "deathsOthers": 644,
+        "recoveriesBp": 4113,
+        "recoveriesOthers": 9467
+      }
     },
     {
       "day": "2020-10-17",
@@ -1536,7 +2778,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 884388,
+        "casesBp": 14173,
+        "casesOthers": 30643,
+        "deathsBp": 465,
+        "deathsOthers": 644,
+        "recoveriesBp": 4113,
+        "recoveriesOthers": 9467
+      }
     },
     {
       "day": "2020-10-18",
@@ -1547,7 +2798,16 @@
       "deathsOthers": 30,
       "recoveriesBp": 91,
       "recoveriesOthers": 417,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 894385,
+        "casesBp": 14435,
+        "casesOthers": 31855,
+        "deathsBp": 468,
+        "deathsOthers": 674,
+        "recoveriesBp": 4204,
+        "recoveriesOthers": 9884
+      }
     },
     {
       "day": "2020-10-19",
@@ -1558,7 +2818,16 @@
       "deathsOthers": 24,
       "recoveriesBp": 42,
       "recoveriesOthers": 182,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 904036,
+        "casesBp": 14623,
+        "casesOthers": 33145,
+        "deathsBp": 475,
+        "deathsOthers": 698,
+        "recoveriesBp": 4246,
+        "recoveriesOthers": 10066
+      }
     },
     {
       "day": "2020-10-20",
@@ -1569,7 +2838,16 @@
       "deathsOthers": 26,
       "recoveriesBp": 161,
       "recoveriesOthers": 164,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 910368,
+        "casesBp": 14890,
+        "casesOthers": 33867,
+        "deathsBp": 487,
+        "deathsOthers": 724,
+        "recoveriesBp": 4407,
+        "recoveriesOthers": 10230
+      }
     },
     {
       "day": "2020-10-21",
@@ -1580,7 +2858,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 919481,
+        "casesBp": 15174,
+        "casesOthers": 35006,
+        "deathsBp": 490,
+        "deathsOthers": 769,
+        "recoveriesBp": 4469,
+        "recoveriesOthers": 10436
+      }
     },
     {
       "day": "2020-10-22",
@@ -1591,7 +2878,16 @@
       "deathsOthers": 82,
       "recoveriesBp": 139,
       "recoveriesOthers": 478,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 935842,
+        "casesBp": 15624,
+        "casesOthers": 36588,
+        "deathsBp": 499,
+        "deathsOthers": 806,
+        "recoveriesBp": 4546,
+        "recoveriesOthers": 10708
+      }
     },
     {
       "day": "2020-10-23",
@@ -1602,7 +2898,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 935842,
+        "casesBp": 15624,
+        "casesOthers": 36588,
+        "deathsBp": 499,
+        "deathsOthers": 806,
+        "recoveriesBp": 4546,
+        "recoveriesOthers": 10708
+      }
     },
     {
       "day": "2020-10-24",
@@ -1613,7 +2918,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 935842,
+        "casesBp": 15624,
+        "casesOthers": 36588,
+        "deathsBp": 499,
+        "deathsOthers": 806,
+        "recoveriesBp": 4546,
+        "recoveriesOthers": 10708
+      }
     },
     {
       "day": "2020-10-25",
@@ -1624,7 +2938,16 @@
       "deathsOthers": 185,
       "recoveriesBp": 220,
       "recoveriesOthers": 1172,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 1002093,
+        "casesBp": 17782,
+        "casesOthers": 45860,
+        "deathsBp": 544,
+        "deathsOthers": 991,
+        "recoveriesBp": 4766,
+        "recoveriesOthers": 11880
+      }
     },
     {
       "day": "2020-10-26",
@@ -1635,7 +2958,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 1002093,
+        "casesBp": 17782,
+        "casesOthers": 45860,
+        "deathsBp": 544,
+        "deathsOthers": 991,
+        "recoveriesBp": 4766,
+        "recoveriesOthers": 11880
+      }
     },
     {
       "day": "2020-10-27",
@@ -1646,7 +2978,16 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": true
+      "nodata": true,
+      "total": {
+        "tests": 1002093,
+        "casesBp": 17782,
+        "casesOthers": 45860,
+        "deathsBp": 544,
+        "deathsOthers": 991,
+        "recoveriesBp": 4766,
+        "recoveriesOthers": 11880
+      }
     },
     {
       "day": "2020-10-28",
@@ -1657,7 +2998,16 @@
       "deathsOthers": 40,
       "recoveriesBp": 78,
       "recoveriesOthers": 374,
-      "nodata": false
+      "nodata": false,
+      "total": {
+        "tests": 1017689,
+        "casesBp": 18340,
+        "casesOthers": 47593,
+        "deathsBp": 547,
+        "deathsOthers": 1031,
+        "recoveriesBp": 4844,
+        "recoveriesOthers": 12254
+      }
     }
   ]
 }
