@@ -66,7 +66,7 @@
                 }
               ), borderColor: createGradient }, { label: 'Összes gyógyult', data: loadedData.recoveries, borderColor: (context) => createGradient(
                 context,
-                { colorStart: '#7ed4e6', colorEnd: '#00ccf5' }
+                { colorStart: '#a8f0b7', colorEnd: '#00f535' }
               ) }, { label: 'Összes elhunyt', data: loadedData.deaths, borderColor: (context) => createGradient(
                 context,
                 { colorStart: 'rgba(0, 0, 0, .66)', colorEnd: '#000' }
