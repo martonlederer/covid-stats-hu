@@ -1,38 +1,20 @@
-// This file uses archive.org to fetch cases in the past
-// huge thanks to them, they made this project possible
-// i could not have gotten the actual historical data without them
-
-// to use it, update the month variable (line 17) and set the prev day variable (i) in the for loop (line 19) and the max day to go until
-// it is recommended to repeat the fetching in the range of around 10-15 days
-
-// this is a hardcoded script
-// not recommended in production or to learn from
-// i only used this to fetch historical covid data
-
-// this should have a better way to check if there has been a publish between two days
-// i also did not test changing the month and using the first day of the month in a run
-// i calculated that by hand, just to make sure it is the right data
-
-// if you decide to use this script, I cannot give you any support
-// make sure to create a .env file with the required environment variables tho
-
-// node timetravel.js
-
-// - Marton Lederer
+import moment from 'moment-timezone'
+import axios from 'axios'
+import { readFileSync, writeFileSync } from 'fs'
+import { exit } from 'process'
+import { parse } from 'node-html-parser'
+import type { ITotalData, IDayData } from '../api/types'
+import { join } from 'path'
 
 console.log(
   'WARNING: UNSUPPORTED SCRIPT. \nMAKE SURE TO READ THE COMMENTS IN THE "timetravel.js" file before running this.'
 )
 
-const moment = require('moment'),
-  axios = require('axios'),
-  { readFileSync, writeFileSync } = require('fs'),
-  { exit } = require('process'),
-  { parse } = require('node-html-parser'),
-  createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join(''))
+const createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join('')),
+  dataFile = join(process.cwd(), './data.json')
 
-if (!process.env.PRODUCTION)
-  require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
+if (!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
+
 ;(async () => {
   let month = '10'
 
@@ -41,7 +23,9 @@ if (!process.env.PRODUCTION)
     i < 27; // max day to go until
     i++
   ) {
-    let covidData = JSON.parse(new TextDecoder().decode(readFileSync('data.json')))
+    let covidData: { total: ITotalData; days: IDayData[] } = JSON.parse(
+      new TextDecoder().decode(readFileSync(dataFile))
+    )
 
     // check for around 6 PM. the site should be updated then
     let waybackURL = `https://archive.org/wayback/available?url=${process.env.API_URL.replace('https://', '').replace(
@@ -141,7 +125,7 @@ if (!process.env.PRODUCTION)
 
             console.log('Calculated total data')
 
-            writeFileSync('data.json', new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+            writeFileSync(dataFile, new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
             console.log('Wrote file')
           })
           .catch((err) => {
