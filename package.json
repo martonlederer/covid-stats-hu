@@ -15,7 +15,7 @@
     "fmt:check": "prettier --check .",
     "build:api": "cd api && tsc",
     "build:jobs": "cd jobs && tsc",
-    "sync": "cd jobs && tsc && cd .. && node dist/jobs/sync-data.js"
+    "sync": "cd jobs && tsc && cd .. && node jobs/dist/jobs/sync-data.js"
   },
   "gitHooks": {
     "pre-commit": "prettier --write . && git add -A"

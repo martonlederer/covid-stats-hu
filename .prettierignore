@@ -1,6 +1,9 @@
 .github
 .vscode
+.vercel
 node_modules
 public
 .env
 data.json
+jobs/dist
+api/dist
