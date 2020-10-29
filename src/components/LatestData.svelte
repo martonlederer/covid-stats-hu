@@ -5,7 +5,9 @@
 
   moment.tz.setDefault('Europe/Budapest')
 
-  let today = getTodayData()
+  let today = getTodayData(),
+    count = 0,
+    counter = setInterval(() => count++, 40)
 
   async function getTodayData() {
     return await query({
@@ -13,28 +15,42 @@
       variables: { from: moment().format('YYYY-MM-DD'), to: moment().format('YYYY-MM-DD') }
     })
   }
+
+  today.finally(() => clearInterval(counter))
 </script>
 
 <h1 class="title">Mai adatok</h1>
 <div class="latest-data">
   <div class="data cases">
     {#await today}
-      <h1>+0</h1>
+      <h1>+{count}</h1>
     {:then loadedToday}
       <h1>+{loadedToday.dailyData[0].cases}</h1>
     {/await}
     <span>pozitív eset</span>
   </div>
   <div class="data deaths">
-    <h1>+10</h1>
+    {#await today}
+      <h1>+{count}</h1>
+    {:then loadedToday}
+      <h1>+{loadedToday.dailyData[0].deaths}</h1>
+    {/await}
     <span>elhunyt</span>
   </div>
   <div class="data recoveries">
-    <h1>+30</h1>
+    {#await today}
+      <h1>+{count}</h1>
+    {:then loadedToday}
+      <h1>+{loadedToday.dailyData[0].recoveries}</h1>
+    {/await}
     <span>felépült</span>
   </div>
   <div class="data tests">
-    <h1>+1000</h1>
+    {#await today}
+      <h1>+{count}</h1>
+    {:then loadedToday}
+      <h1>+{loadedToday.dailyData[0].tests}</h1>
+    {/await}
     <span>teszt</span>
   </div>
 </div>
