@@ -10,7 +10,7 @@ moment.tz.setDefault('Europe/Budapest')
 @Resolver()
 export class DataResolver {
   // all time data
-  @Query(() => TotalData)
+  @Query(() => TotalData, { description: 'All time COVID-19 data in Hungary' })
   async allTime() {
     const data: ITotalData = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
       .total
@@ -40,10 +40,11 @@ export class DataResolver {
   }
 
   // days data
-  @Query(() => [DayData])
+  @Query(() => [DayData], { description: 'List of daily additional datas and total datas' })
   async dailyData(
-    @Arg('from', { defaultValue: '2020-06-01' }) from: string,
-    @Arg('to', { defaultValue: moment().format('YYYY-MM-DD') }) to: string
+    @Arg('from', { defaultValue: '2020-06-01', description: 'The first record to return (date)' }) from: string,
+    @Arg('to', { defaultValue: moment().format('YYYY-MM-DD'), description: 'The last record to return (date)' })
+    to: string
   ): Promise<DayData[]> {
     if (moment(to).diff(from) < 0) throw new Error('From date is more than to date')
     const data: IDayData[] = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
@@ -81,7 +82,12 @@ export class DataResolver {
       })
     }
 
-    return apiDays.filter(({ day }) => moment(day).isBetween(from, to) || day === from || day === to)
+    return apiDays.filter(
+      ({ day }) =>
+        moment(day).isBetween(moment(from).format('YYYY-MM-DD'), moment(to).format('YYYY-MM-DD')) ||
+        day === moment(from).format('YYYY-MM-DD') ||
+        day === moment(to).format('YYYY-MM-DD')
+    )
   }
 
   async getHungaryInfo(): Promise<IHungaryInfo> {
