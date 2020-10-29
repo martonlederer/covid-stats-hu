@@ -6,7 +6,10 @@
 <svelte:window bind:scrollY />
 <div class="Nav" bind:clientHeight={navHeight} class:scrolled={scrollY > 30}>
   <h1>Covid-19</h1>
-  <div class="menu"><a href="/">Home</a> <a href="/api">API</a> <a href="https://marton.lederer.hu">Developer</a></div>
+  <div class="menu">
+    <a href="/api" target="_blank">API</a>
+    <a href="https://marton.lederer.hu" target="_blank">Készítő</a>
+  </div>
 </div>
 <div class="nav-placeholder" style="height: {navHeight}px" />
 

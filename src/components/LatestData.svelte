@@ -2,12 +2,14 @@
   import query from '../utils/graphql'
   import todayQuery from '../queries/today.gql'
   import moment from 'moment-timezone'
+  import Spinner from './Spinner.svelte'
+  import { fade } from 'svelte/transition'
 
   moment.tz.setDefault('Europe/Budapest')
 
   let today = getTodayData(),
     count = 0,
-    counter = setInterval(() => count++, 40)
+    counter = setInterval(() => count++, 33)
 
   async function getTodayData() {
     return await query({
@@ -19,7 +21,15 @@
   today.finally(() => clearInterval(counter))
 </script>
 
-<h1 class="title">Mai adatok</h1>
+<h1 class="title">
+  <span>Mai adatok</span>
+  {#await today}
+    <div class="loading-data" transition:fade={{ duration: 280 }}>
+      <span>Betöltés...</span>
+      <Spinner speed={800} />
+    </div>
+  {/await}
+</h1>
 <div class="latest-data">
   <div class="data cases">
     {#await today}
@@ -61,11 +71,29 @@
     color: $primary-font-color
     margin-bottom: .3em
     font-size: 2em
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .loading-data
+      display: flex
+      align-items: center
+      transform: scale(.45)
+
+      span
+        font-size: .9em
+        color: #000
+        margin-right: .7em
+        font-weight: 400
+
+        @media screen and (max-width: 720px)
+          display: none
 
   .latest-data
     display: flex
     align-items: flex-start
     justify-content: space-between
+    margin-bottom: 2em
 
     @media screen and (max-width: 720px)
       display: block

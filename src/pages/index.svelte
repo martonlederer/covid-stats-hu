@@ -6,6 +6,7 @@
 <Nav />
 <div class="page">
   <LatestData />
+  f
 </div>
 
 <style lang="sass">
