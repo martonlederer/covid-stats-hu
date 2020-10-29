@@ -31,6 +31,7 @@
     "prettier-plugin-svelte": "^1.4.0",
     "rollup": "^2.3.4",
     "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-svelte": "^6.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
@@ -41,6 +42,7 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
+    "@rollup/plugin-json": "^4.1.0",
     "@vercel/build-utils": "^2.5.4",
     "@vercel/node": "^1.8.4",
     "apollo-server-micro": "^2.18.2",
@@ -53,6 +55,7 @@
     "reflect-metadata": "^0.1.13",
     "sass": "^1.27.0",
     "sirv-cli": "^1.0.8",
+    "svelte-chartjs": "^1.0.1",
     "type-graphql": "^1.1.0"
   }
 }

@@ -7,6 +7,8 @@ import { sass, typescript as tsProcess } from 'svelte-preprocess'
 import typescript from '@rollup/plugin-typescript'
 import tsconfigFile from './tsconfig.json'
 import { join } from 'path'
+import { string } from 'rollup-plugin-string'
+import json from '@rollup/plugin-json'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -41,6 +43,8 @@ export default {
       inlineSources: !production
     }),
     sass(),
+    string({ include: ['**/*.graphql', '**/*.gql'] }),
+    json(),
     !production && serve(),
     !production && livereload('public'),
     production && terser()
