@@ -6,10 +6,9 @@ import { terser } from 'rollup-plugin-terser'
 import { sass, typescript as tsProcess } from 'svelte-preprocess'
 import typescript from '@rollup/plugin-typescript'
 import tsconfigFile from './tsconfig.json'
+import { join } from 'path'
 
 const production = !process.env.ROLLUP_WATCH
-
-console.log(production)
 
 export default {
   input: 'src/main.ts',
@@ -25,7 +24,12 @@ export default {
       css: (css) => {
         css.write('bundle.css')
       },
-      preprocess: [sass(), tsProcess({ tsconfigFile })]
+      preprocess: [
+        sass({
+          prependData: `@import '${join(process.cwd(), 'src/style/general.sass')}'`
+        }),
+        tsProcess({ tsconfigFile })
+      ]
     }),
     resolve({
       browser: true,
