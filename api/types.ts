@@ -1,43 +1,51 @@
-import { ObjectType, Field } from 'type-graphql'
+import { ObjectType, Field, Int, Float } from 'type-graphql'
 
 // the total data that the API returns
 @ObjectType()
 export class TotalData {
-  @Field()
+  @Field((type) => Int)
   tests: number // total number of tests
-  @Field()
+  @Field((type) => Int)
   casesBp: number // total number of cases in Budapest
-  @Field()
+  @Field((type) => Int)
   casesOthers: number // total number of cases outside of Budapest
-  @Field()
+  @Field((type) => Int)
+  cases: number // total number of cases in Hungary
+  @Field((type) => Int)
   deathsBp: number // total number of deaths in Budapest
-  @Field()
+  @Field((type) => Int)
   deathsOthers: number // total number of deaths outside of Budapest
-  @Field()
+  @Field((type) => Int)
+  deaths: number // total number of deaths in Hungary
+  @Field((type) => Int)
   recoveriesBp: number // total number of recoveries in Budapest
-  @Field()
+  @Field((type) => Int)
   recoveriesOthers: number // total number of recoveries outside of Budapest
-  @Field()
+  @Field((type) => Int)
+  recoveries: number // total number of recoveries in Hungary
+  @Field((type) => Int)
   populationBudapest: number // population of Budapest
-  @Field()
+  @Field((type) => Int)
+  populationOthers: number // population outside of Budapest
+  @Field((type) => Int)
   population: number // population of Hungary
-  @Field()
+  @Field((type) => Float)
   caseRateBp: number // what percentage of Budapest is sick
-  @Field()
+  @Field((type) => Float)
   caseRateOthers: number // what percentage outside of Budapest is sick
-  @Field()
+  @Field((type) => Float)
   caseRate: number // what percentage of Hungary is sick
-  @Field()
+  @Field((type) => Float)
   recoveryRateBp: number // what percentage of Budapest has recovered
-  @Field()
+  @Field((type) => Float)
   recoveryRateOthers: number // what percentage outside of Budapest has recovered
-  @Field()
+  @Field((type) => Float)
   recoveryRate: number // what percentage of Hungary has recovered
-  @Field()
+  @Field((type) => Float)
   fatalityRateBp: number // fatal case rate in Budapest
-  @Field()
+  @Field((type) => Float)
   fatalityRateOthers: number // fatal case rate outside of Budapest
-  @Field()
+  @Field((type) => Float)
   fatalityRate: number // fatal case rate in Hungary
 }
 
@@ -57,25 +65,25 @@ export interface ITotalData {
 export class DayData {
   @Field()
   day: string // the date of the record
-  @Field()
+  @Field((type) => Int)
   tests: number // additional tests made on the given day
-  @Field()
+  @Field((type) => Int)
   casesBp: number // additional cases in Budapest on the given day
-  @Field()
+  @Field((type) => Int)
   casesOthers: number // additional cases outside of Budapest on the given day
-  @Field()
+  @Field((type) => Int)
   cases: number // additional cases on the given day
-  @Field()
+  @Field((type) => Int)
   deathsBp: number // additional fatal cases in Budapest on the given day
-  @Field()
+  @Field((type) => Int)
   deathsOthers: number // additional fatal cases outside of Budapest on the given day
-  @Field()
+  @Field((type) => Int)
   deaths: number // additional fatal cases on the given day
-  @Field()
+  @Field((type) => Int)
   recoveriesBp: number // additional recoveries  in Budapest on the given day
-  @Field()
+  @Field((type) => Int)
   recoveriesOthers: number // additional recoveries outside of Budapest on the given day
-  @Field()
+  @Field((type) => Int)
   recoveries: number // additional revoceries on the given day
   @Field()
   nodata: boolean // if no data is recorded that day
@@ -101,4 +109,5 @@ export interface IDayData {
 export interface IHungaryInfo {
   populationBudapest: number
   population: number
+  populationOthers: number
 }

@@ -15,12 +15,16 @@ export class DataResolver {
     const data: ITotalData = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
       .total
 
-    const { populationBudapest, population } = await this.getHungaryInfo()
+    const { populationBudapest, population, populationOthers } = await this.getHungaryInfo()
 
     let apiData: TotalData = {
       ...data,
       populationBudapest,
       population,
+      populationOthers,
+      cases: data.casesBp + data.casesOthers,
+      deaths: data.deathsBp + data.deathsOthers,
+      recoveries: data.recoveriesBp + data.recoveriesOthers,
       caseRateBp: (data.casesBp / populationBudapest) * 100,
       caseRateOthers: (data.casesOthers / (population - populationBudapest)) * 100,
       caseRate: ((data.casesBp + data.casesOthers) / population) * 100,
@@ -44,7 +48,7 @@ export class DataResolver {
     if (moment(to).diff(from) < 0) throw new Error('From date is more than to date')
     const data: IDayData[] = JSON.parse(new TextDecoder().decode(await fs.readFile(join(__dirname, '../data.json'))))
         .days,
-      { populationBudapest, population } = await this.getHungaryInfo()
+      { populationBudapest, population, populationOthers } = await this.getHungaryInfo()
 
     let apiDays: DayData[] = []
 
@@ -58,6 +62,10 @@ export class DataResolver {
           ...day.total,
           populationBudapest, // we add the population too, it might be useful
           population,
+          populationOthers,
+          cases: day.total.casesBp + day.total.casesOthers,
+          deaths: day.total.deathsBp + day.total.deathsOthers,
+          recoveries: day.total.recoveriesBp + day.total.recoveriesOthers,
           caseRateBp: (day.total.casesBp / populationBudapest) * 100,
           caseRateOthers: (day.total.casesOthers / (population - populationBudapest)) * 100,
           caseRate: ((day.total.casesBp + day.total.casesOthers) / population) * 100,
@@ -91,8 +99,9 @@ export class DataResolver {
     }
 
     let population = hungaryInfo.data.population,
-      populationBudapest = budapestInfo.data.highlight.Population.data[0].data.Count_Person
+      populationBudapest = budapestInfo.data.highlight.Population.data[0].data.Count_Person,
+      populationOthers = population - populationBudapest
 
-    return { population, populationBudapest }
+    return { population, populationBudapest, populationOthers }
   }
 }
