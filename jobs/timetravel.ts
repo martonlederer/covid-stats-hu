@@ -13,8 +13,8 @@ console.log(
 const createDataFromEl = (parsedData, el) => Number(parsedData.querySelector(el).innerText.split(' ').join('')),
   dataFile = join(process.cwd(), './data.json')
 
-if (!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
-
+if (!process.env.PRODUCTION)
+  require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
 ;(async () => {
   let month = '10'
 
