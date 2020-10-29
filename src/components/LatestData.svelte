@@ -14,7 +14,10 @@
   async function getTodayData() {
     return await query({
       query: todayQuery,
-      variables: { from: moment().format('YYYY-MM-DD'), to: moment().format('YYYY-MM-DD') }
+      variables: {
+        from: moment().subtract(1, 'days').format('YYYY-MM-DD'),
+        to: moment().format('YYYY-MM-DD')
+      }
     })
   }
 
@@ -35,7 +38,7 @@
     {#await today}
       <h1>+{count}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[0].cases}</h1>
+      <h1>+{loadedToday.dailyData[loadedToday.dailyData.length - 1].cases}</h1>
     {/await}
     <span>pozitív eset</span>
   </div>
@@ -43,7 +46,7 @@
     {#await today}
       <h1>+{count}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[0].deaths}</h1>
+      <h1>+{loadedToday.dailyData[loadedToday.dailyData.length - 1].deaths}</h1>
     {/await}
     <span>elhunyt</span>
   </div>
@@ -51,7 +54,9 @@
     {#await today}
       <h1>+{count}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[0].recoveries}</h1>
+      <h1>
+        +{loadedToday.dailyData[loadedToday.dailyData.length - 1].recoveries}
+      </h1>
     {/await}
     <span>felépült</span>
   </div>
@@ -59,7 +64,7 @@
     {#await today}
       <h1>+{count}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[0].tests}</h1>
+      <h1>+{loadedToday.dailyData[loadedToday.dailyData.length - 1].tests}</h1>
     {/await}
     <span>teszt</span>
   </div>
@@ -68,32 +73,14 @@
 <style lang="sass">
 
   h1.title
-    color: $primary-font-color
-    margin-bottom: .3em
-    font-size: 2em
-    display: flex
-    align-items: center
-    justify-content: space-between
-
-    .loading-data
-      display: flex
-      align-items: center
-      transform: scale(.45)
-
-      span
-        font-size: .9em
-        color: #000
-        margin-right: .7em
-        font-weight: 400
-
-        @media screen and (max-width: 720px)
-          display: none
+    +title
+    +titleWithLoading
 
   .latest-data
     display: flex
     align-items: flex-start
     justify-content: space-between
-    margin-bottom: 2em
+    margin-bottom: 2.5em
 
     @media screen and (max-width: 720px)
       display: block

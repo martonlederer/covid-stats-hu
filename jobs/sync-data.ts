@@ -10,14 +10,17 @@ import { join } from 'path'
 // it is an automated cron-job, running every second hour, or on push
 // for more info, check .github/workflows/update-data.yml
 
-const createDataFromEl = (parsedData, el): number => Number(parsedData.querySelector(el).innerText.split(' ').join('')),
+const createDataFromEl = (parsedData, el): number =>
+    Number(parsedData.querySelector(el).innerText.split(' ').join('')),
   dataFile = join(process.cwd(), './data.json')
 
 if (!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
 
 moment.tz.setDefault('Europe/Budapest')
 
-let covidData: { total: ITotalData; days: IDayData[] } = JSON.parse(new TextDecoder().decode(readFileSync(dataFile)))
+let covidData: { total: ITotalData; days: IDayData[] } = JSON.parse(
+  new TextDecoder().decode(readFileSync(dataFile))
+)
 
 axios
   .get(process.env.API_URL)
@@ -28,19 +31,36 @@ axios
     const parsedData = parse(data),
       tests = createDataFromEl(parsedData, process.env.TESTS_EL),
       currentCasesBp = createDataFromEl(parsedData, process.env.CASES_PEST_EL),
-      currentCasesOthers = createDataFromEl(parsedData, process.env.CASES_OTHERS_EL),
+      currentCasesOthers = createDataFromEl(
+        parsedData,
+        process.env.CASES_OTHERS_EL
+      ),
       currentDeathsBp = createDataFromEl(parsedData, process.env.DEATHS_BP_EL),
-      currentDeathsOthers = createDataFromEl(parsedData, process.env.DEATHS_OTHERS_EL),
-      currentRecoveriesBp = createDataFromEl(parsedData, process.env.RECOVERIES_BP_EL),
-      currentRecoveriesOthers = createDataFromEl(parsedData, process.env.RECOVERIES_OTHERS_EL),
+      currentDeathsOthers = createDataFromEl(
+        parsedData,
+        process.env.DEATHS_OTHERS_EL
+      ),
+      currentRecoveriesBp = createDataFromEl(
+        parsedData,
+        process.env.RECOVERIES_BP_EL
+      ),
+      currentRecoveriesOthers = createDataFromEl(
+        parsedData,
+        process.env.RECOVERIES_OTHERS_EL
+      ),
       casesBp = currentCasesBp + currentDeathsBp + currentRecoveriesBp,
-      casesOthers = currentCasesOthers + currentDeathsOthers + currentRecoveriesOthers,
+      casesOthers =
+        currentCasesOthers + currentDeathsOthers + currentRecoveriesOthers,
       previousData = covidData['total']
 
     console.log('Processed/parsed data')
 
     // check if yesterday is not existing
-    if (covidData['days'].find((el) => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD')) === undefined) {
+    if (
+      covidData['days'].find(
+        (el) => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD')
+      ) === undefined
+    ) {
       covidData['days'].push({
         day: moment().subtract(1, 'days').format('YYYY-MM-DD'),
         tests: 0,
@@ -53,12 +73,19 @@ axios
         nodata: true,
         total: previousData
       })
-      writeFileSync(dataFile, new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+      writeFileSync(
+        dataFile,
+        new TextEncoder().encode(JSON.stringify(covidData, null, 2))
+      )
       console.log("Updated yesterday's data")
     }
 
     // check if this day was already pushed
-    if (covidData['days'].find((el) => el.day === moment().format('YYYY-MM-DD')) !== undefined) {
+    if (
+      covidData['days'].find(
+        (el) => el.day === moment().format('YYYY-MM-DD')
+      ) !== undefined
+    ) {
       console.log('Day already pushed')
       exit(0)
     }
@@ -66,9 +93,11 @@ axios
     // let's find the last update date
     for (const pElement of parsedData.querySelectorAll('p')) {
       if (pElement.innerText.includes('Legutolsó frissítés dátuma:')) {
-        const lastUpdateDate = moment(new Date(pElement.innerText.replace('Legutolsó frissítés dátuma:', ''))).format(
-          'YYYY-MM-DD'
-        )
+        const lastUpdateDate = moment(
+          new Date(
+            pElement.innerText.replace('Legutolsó frissítés dátuma:', '')
+          )
+        ).format('YYYY-MM-DD')
 
         if (moment().format('YYYY-MM-DD') !== lastUpdateDate) {
           console.log('Data did not yet update today...')
@@ -124,7 +153,10 @@ axios
 
     console.log('Calculated total data')
 
-    writeFileSync(dataFile, new TextEncoder().encode(JSON.stringify(covidData, null, 2)))
+    writeFileSync(
+      dataFile,
+      new TextEncoder().encode(JSON.stringify(covidData, null, 2))
+    )
     console.log('Wrote file')
   })
   .catch((err) => {

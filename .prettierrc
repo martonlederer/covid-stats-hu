@@ -4,7 +4,6 @@
   "useTabs": false,
   "semi": false,
   "singleQuote": true,
-  "printWidth": 120,
   "svelteIndentScriptAndStyle": true,
   "svelteSortOrder": "scripts-markup-styles",
   "svelteBracketNewLine": false,

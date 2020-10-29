@@ -1,7 +1,10 @@
 import type { GraphqlQuery } from './types'
 import axios, { AxiosError, AxiosResponse } from 'axios'
 
-export default async function query({ query, variables = null }: GraphqlQuery): Promise<Record<string, any>> {
+export default async function query({
+  query,
+  variables = null
+}: GraphqlQuery): Promise<Record<string, any>> {
   let response: Record<string, any>
 
   await axios('/api', {

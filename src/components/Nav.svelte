@@ -25,6 +25,7 @@
     background-color: #fff
     box-shadow: none
     align-items: center
+    z-index: 1000
     justify-content: space-between
     transition: all .3s
 

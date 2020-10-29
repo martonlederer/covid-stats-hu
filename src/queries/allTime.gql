@@ -1,0 +1,10 @@
+query {
+  dailyData {
+    day
+    total {
+      cases
+      deaths
+      recoveries
+    }
+  }
+}
