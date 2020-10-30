@@ -59,7 +59,7 @@
                     colorStart: '#79cfe0',
                     colorEnd: '#00ccf5'
                   }) }] }}
-          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : loadedData.nodatas[tooltipItem.label] ? '\nErről a napról nem pontos \nvagy kevés adat \náll rendelkezésre' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
       </div>
     </div>
     <div class="graph" transition:fade={{ duration: 300 }}>
@@ -73,7 +73,7 @@
                       colorEnd: 'rgba(255, 62, 0, .63)'
                     }
                   ), borderColor: createGradient }] }}
-          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : loadedData.nodatas[tooltipItem.label] ? '\nErről a napról nem pontos \nvagy kevés adat \náll rendelkezésre' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
       </div>
     </div>
     <div class="graph" transition:fade={{ duration: 300 }}>
@@ -87,7 +87,7 @@
                       colorEnd: 'rgba(0, 0, 0, .8)'
                     }
                   ), borderColor: '#000' }] }}
-          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : loadedData.nodatas[tooltipItem.label] ? '\nErről a napról nem pontos \nvagy kevés adat \náll rendelkezésre' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
       </div>
     </div>
     <div class="graph" transition:fade={{ duration: 300 }}>
@@ -104,7 +104,7 @@
                     colorStart: '#a8f0b7',
                     colorEnd: '#00f535'
                   }) }] }}
-          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : loadedData.nodatas[tooltipItem.label] ? '\nErről a napról nem pontos \nvagy kevés adat \náll rendelkezésre' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
       </div>
     </div>
   {/await}
