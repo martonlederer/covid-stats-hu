@@ -4,6 +4,7 @@
   import query from '../utils/graphql'
   import Spinner from './Spinner.svelte'
   import { fade } from 'svelte/transition'
+  import type { ExpandParams } from 'src/utils/types'
 
   let data = loadData()
 
@@ -41,6 +42,24 @@
 
     return gradient
   }
+
+  function expandTransition(
+    node: Element,
+    { duration, delay, easing }: ExpandParams
+  ) {
+    const style = getComputedStyle(node),
+      targetOpacity = +style.opacity,
+      targetTransform = style.transform === 'none' ? '' : style.transform
+
+    return {
+      delay,
+      duration,
+      easing,
+      css: (t, u) => `
+        transform: ${targetTransform} scaleY(${t}) translateY(${-t / 120}%);
+        opacity: ${targetOpacity - u}`
+    }
+  }
 </script>
 
 <h1 class="title">
@@ -55,8 +74,8 @@
 <p class="description">
   A cimkékre kattintva lehet megjeleníteni/elrejteni adatokat
 </p>
-<div class="all-time-graph">
-  {#await data then loadedData}
+{#await data then loadedData}
+  <div class="all-time-graph" transition:expandTransition={{ duration: 300 }}>
     <Line
       data={{ labels: loadedData.dates, datasets: [{ label: 'Összes fertőzött', data: loadedData.cases, backgroundColor: (context) => createGradient(
                 context,
@@ -72,8 +91,8 @@
                 { colorStart: 'rgba(0, 0, 0, .66)', colorEnd: '#000' }
               ) }] }}
       options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 4.3, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 30 } }] } }} />
-  {/await}
-</div>
+  </div>
+{/await}
 
 <style lang="sass">
 
