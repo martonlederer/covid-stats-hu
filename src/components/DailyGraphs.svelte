@@ -62,6 +62,51 @@
           options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
       </div>
     </div>
+    <div class="graph" transition:fade={{ duration: 300 }}>
+      <h1>Új pozitív esetek</h1>
+      <div class="chart">
+        <Line
+          data={{ labels: loadedData.dates, datasets: [{ label: 'Napi új pozitív esetek', data: loadedData.cases, backgroundColor: (context) => createGradient(
+                    context,
+                    {
+                      colorStart: 'rgba(255, 160, 128, .7)',
+                      colorEnd: 'rgba(255, 62, 0, .63)'
+                    }
+                  ), borderColor: createGradient }] }}
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+      </div>
+    </div>
+    <div class="graph" transition:fade={{ duration: 300 }}>
+      <h1>Új halálozások</h1>
+      <div class="chart">
+        <Line
+          data={{ labels: loadedData.dates, datasets: [{ label: 'Napi új halálesetek', data: loadedData.deaths, backgroundColor: (context) => createGradient(
+                    context,
+                    {
+                      colorStart: 'rgba(0, 0, 0, .6)',
+                      colorEnd: 'rgba(0, 0, 0, .8)'
+                    }
+                  ), borderColor: '#000' }] }}
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+      </div>
+    </div>
+    <div class="graph" transition:fade={{ duration: 300 }}>
+      <h1>Új gyógyult esetek</h1>
+      <div class="chart">
+        <Line
+          data={{ labels: loadedData.dates, datasets: [{ label: 'Napi új felépült betegek', data: loadedData.recoveries, backgroundColor: (context) => createGradient(
+                    context,
+                    {
+                      colorStart: 'rgba(0, 245, 53, .57)',
+                      colorEnd: 'rgba(0, 245, 53, .8)'
+                    }
+                  ), borderColor: (context) => createGradient(context, {
+                    colorStart: '#a8f0b7',
+                    colorEnd: '#00f535'
+                  }) }] }}
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+      </div>
+    </div>
   {/await}
 </div>
 
@@ -79,6 +124,7 @@
   .daily-graphs
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
 
     @media screen and (max-width: 720px)
       display: block
@@ -86,6 +132,7 @@
 
     .graph
       width: 47%
+      margin-bottom: 2em
 
       @media screen and (max-width: 720px)
         width: 100%

@@ -1598,7 +1598,7 @@
       "deathsOthers": 0,
       "recoveriesBp": 0,
       "recoveriesOthers": 0,
-      "nodata": false,
+      "nodata": true,
       "total": {
         "tests": 383411,
         "casesBp": 2163,
