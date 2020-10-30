@@ -1880,7 +1880,7 @@
       "recoveriesOthers": 52,
       "nodata": false,
       "total": {
-        "tests": 445047,
+        "tests": 437531,
         "casesBp": 3076,
         "casesOthers": 3847,
         "deathsBp": 370,
@@ -1891,7 +1891,7 @@
     },
     {
       "day": "2020-09-03",
-      "tests": 0,
+      "tests": 7516,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -1971,7 +1971,7 @@
     },
     {
       "day": "2020-09-07",
-      "tests": 17146,
+      "tests": 11424,
       "casesBp": 400,
       "casesOthers": 517,
       "deathsBp": 0,
@@ -1980,7 +1980,7 @@
       "recoveriesOthers": 15,
       "nodata": false,
       "total": {
-        "tests": 487146,
+        "tests": 481424,
         "casesBp": 4069,
         "casesOthers": 5235,
         "deathsBp": 371,
@@ -1991,7 +1991,7 @@
     },
     {
       "day": "2020-09-08",
-      "tests": 0,
+      "tests": 5722,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2031,7 +2031,7 @@
     },
     {
       "day": "2020-09-10",
-      "tests": 0,
+      "tests": 10104,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2040,7 +2040,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 495481,
+        "tests": 505585,
         "casesBp": 4260,
         "casesOthers": 5455,
         "deathsBp": 371,
@@ -2051,7 +2051,7 @@
     },
     {
       "day": "2020-09-11",
-      "tests": 0,
+      "tests": 11637,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2060,7 +2060,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 495481,
+        "tests": 517222,
         "casesBp": 4260,
         "casesOthers": 5455,
         "deathsBp": 371,
@@ -2071,7 +2071,7 @@
     },
     {
       "day": "2020-09-12",
-      "tests": 33582,
+      "tests": 11842,
       "casesBp": 832,
       "casesOthers": 1278,
       "deathsBp": 0,
@@ -2191,7 +2191,7 @@
     },
     {
       "day": "2020-09-18",
-      "tests": 17963,
+      "tests": 11546,
       "casesBp": 484,
       "casesOthers": 922,
       "deathsBp": 4,
@@ -2200,7 +2200,7 @@
       "recoveriesOthers": 52,
       "nodata": false,
       "total": {
-        "tests": 580072,
+        "tests": 591618,
         "casesBp": 6501,
         "casesOthers": 8669,
         "deathsBp": 382,
@@ -2211,7 +2211,7 @@
     },
     {
       "day": "2020-09-19",
-      "tests": 17962,
+      "tests": 12504,
       "casesBp": 488,
       "casesOthers": 926,
       "deathsBp": 5,
@@ -2220,7 +2220,7 @@
       "recoveriesOthers": 85,
       "nodata": false,
       "total": {
-        "tests": 615999,
+        "tests": 604122,
         "casesBp": 7473,
         "casesOthers": 10517,
         "deathsBp": 391,
@@ -2231,7 +2231,7 @@
     },
     {
       "day": "2020-09-20",
-      "tests": 0,
+      "tests": 11877,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2331,7 +2331,7 @@
     },
     {
       "day": "2020-09-25",
-      "tests": 22898,
+      "tests": 11116,
       "casesBp": 515,
       "casesOthers": 1362,
       "deathsBp": 4,
@@ -2340,7 +2340,7 @@
       "recoveriesOthers": 197,
       "nodata": false,
       "total": {
-        "tests": 680335,
+        "tests": 668553,
         "casesBp": 8853,
         "casesOthers": 14224,
         "deathsBp": 400,
@@ -2351,7 +2351,7 @@
     },
     {
       "day": "2020-09-26",
-      "tests": 0,
+      "tests": 11782,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2391,7 +2391,7 @@
     },
     {
       "day": "2020-09-28",
-      "tests": 14102,
+      "tests": 7065,
       "casesBp": 497,
       "casesOthers": 1056,
       "deathsBp": 5,
@@ -2400,7 +2400,7 @@
       "recoveriesOthers": 20,
       "nodata": false,
       "total": {
-        "tests": 704510,
+        "tests": 697473,
         "casesBp": 9650,
         "casesOthers": 15917,
         "deathsBp": 405,
@@ -2411,7 +2411,7 @@
     },
     {
       "day": "2020-09-29",
-      "tests": 0,
+      "tests": 7037,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2431,7 +2431,7 @@
     },
     {
       "day": "2020-09-30",
-      "tests": 0,
+      "tests": 11167,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2440,7 +2440,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 704510,
+        "tests": 715677,
         "casesBp": 9650,
         "casesOthers": 15917,
         "deathsBp": 405,
@@ -2451,7 +2451,7 @@
     },
     {
       "day": "2020-10-01",
-      "tests": 0,
+      "tests": 11972,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2460,7 +2460,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 704510,
+        "tests": 727649,
         "casesBp": 9650,
         "casesOthers": 15917,
         "deathsBp": 405,
@@ -2471,7 +2471,7 @@
     },
     {
       "day": "2020-10-02",
-      "tests": 54664,
+      "tests": 12394,
       "casesBp": 1366,
       "casesOthers": 3642,
       "deathsBp": 15,
@@ -2480,7 +2480,7 @@
       "recoveriesOthers": 1783,
       "nodata": false,
       "total": {
-        "tests": 759174,
+        "tests": 740043,
         "casesBp": 11016,
         "casesOthers": 19559,
         "deathsBp": 420,
@@ -2491,7 +2491,7 @@
     },
     {
       "day": "2020-10-03",
-      "tests": 0,
+      "tests": 11174,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2500,7 +2500,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 759174,
+        "tests": 751217,
         "casesBp": 11016,
         "casesOthers": 19559,
         "deathsBp": 420,
@@ -2511,7 +2511,7 @@
     },
     {
       "day": "2020-10-04",
-      "tests": 0,
+      "tests": 7957,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2531,7 +2531,7 @@
     },
     {
       "day": "2020-10-05",
-      "tests": 0,
+      "tests": 6424,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2551,7 +2551,7 @@
     },
     {
       "day": "2020-10-06",
-      "tests": 12123,
+      "tests": 5699,
       "casesBp": 409,
       "casesOthers": 1314,
       "deathsBp": 3,
@@ -2591,7 +2591,7 @@
     },
     {
       "day": "2020-10-08",
-      "tests": 0,
+      "tests": 11462,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2600,7 +2600,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 781023,
+        "tests": 792485,
         "casesBp": 11573,
         "casesOthers": 21541,
         "deathsBp": 427,
@@ -2611,7 +2611,7 @@
     },
     {
       "day": "2020-10-09",
-      "tests": 44547,
+      "tests": 11163,
       "casesBp": 973,
       "casesOthers": 3577,
       "deathsBp": 16,
@@ -2620,7 +2620,7 @@
       "recoveriesOthers": 1244,
       "nodata": false,
       "total": {
-        "tests": 825570,
+        "tests": 803648,
         "casesBp": 12546,
         "casesOthers": 25118,
         "deathsBp": 443,
@@ -2631,7 +2631,7 @@
     },
     {
       "day": "2020-10-10",
-      "tests": 0,
+      "tests": 11719,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2640,7 +2640,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 825570,
+        "tests": 815367,
         "casesBp": 12546,
         "casesOthers": 25118,
         "deathsBp": 443,
@@ -2651,7 +2651,7 @@
     },
     {
       "day": "2020-10-11",
-      "tests": 0,
+      "tests": 10203,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2751,7 +2751,7 @@
     },
     {
       "day": "2020-10-16",
-      "tests": 22768,
+      "tests": 9797,
       "casesBp": 647,
       "casesOthers": 2437,
       "deathsBp": 10,
@@ -2760,7 +2760,7 @@
       "recoveriesOthers": 725,
       "nodata": false,
       "total": {
-        "tests": 884388,
+        "tests": 871417,
         "casesBp": 14173,
         "casesOthers": 30643,
         "deathsBp": 465,
@@ -2771,7 +2771,7 @@
     },
     {
       "day": "2020-10-17",
-      "tests": 0,
+      "tests": 12971,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2851,7 +2851,7 @@
     },
     {
       "day": "2020-10-21",
-      "tests": 0,
+      "tests": 9113,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2871,7 +2871,7 @@
     },
     {
       "day": "2020-10-22",
-      "tests": 25474,
+      "tests": 16361,
       "casesBp": 734,
       "casesOthers": 2721,
       "deathsBp": 12,
@@ -2891,7 +2891,7 @@
     },
     {
       "day": "2020-10-23",
-      "tests": 0,
+      "tests": 13628,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2900,7 +2900,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 935842,
+        "tests": 949470,
         "casesBp": 15624,
         "casesOthers": 36588,
         "deathsBp": 499,
@@ -2911,7 +2911,7 @@
     },
     {
       "day": "2020-10-24",
-      "tests": 0,
+      "tests": 11971,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2920,7 +2920,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 935842,
+        "tests": 961441,
         "casesBp": 15624,
         "casesOthers": 36588,
         "deathsBp": 499,
@@ -2931,7 +2931,7 @@
     },
     {
       "day": "2020-10-25",
-      "tests": 66251,
+      "tests": 18932,
       "casesBp": 2158,
       "casesOthers": 9272,
       "deathsBp": 45,
@@ -2940,7 +2940,7 @@
       "recoveriesOthers": 1172,
       "nodata": false,
       "total": {
-        "tests": 1002093,
+        "tests": 980373,
         "casesBp": 17782,
         "casesOthers": 45860,
         "deathsBp": 544,
@@ -2951,7 +2951,7 @@
     },
     {
       "day": "2020-10-26",
-      "tests": 0,
+      "tests": 10010,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
@@ -2960,7 +2960,7 @@
       "recoveriesOthers": 0,
       "nodata": true,
       "total": {
-        "tests": 1002093,
+        "tests": 990383,
         "casesBp": 17782,
         "casesOthers": 45860,
         "deathsBp": 544,
@@ -2971,7 +2971,7 @@
     },
     {
       "day": "2020-10-27",
-      "tests": 0,
+      "tests": 11710,
       "casesBp": 0,
       "casesOthers": 0,
       "deathsBp": 0,
