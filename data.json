@@ -1772,7 +1772,7 @@
     {
       "day": "2020-08-28",
       "tests": 12823,
-      "casesBp": 166,
+      "casesBp": 96,
       "casesOthers": 215,
       "deathsBp": 0,
       "deathsOthers": 0,
@@ -1781,7 +1781,7 @@
       "nodata": false,
       "total": {
         "tests": 417890,
-        "casesBp": 2468,
+        "casesBp": 2398,
         "casesOthers": 3201,
         "deathsBp": 369,
         "deathsOthers": 245,
