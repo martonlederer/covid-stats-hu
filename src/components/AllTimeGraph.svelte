@@ -77,6 +77,10 @@
       options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 4.3, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 30 } }] } }} />
   </div>
 {/await}
+<p class="description end">
+  Forrás:
+  <a href="https://koronavirus.gov.hu" target="_blank">koronavirus.gov.hu</a>
+</p>
 
 <style lang="sass">
 
@@ -88,9 +92,13 @@
   p.description
     +description
 
+    &.end
+      margin-bottom: 2em
+      text-align: center
+
   .all-time-graph
     position: relative
     height: 300px
-    margin-bottom: 2em
+    margin-bottom: 1em
 
 </style>
