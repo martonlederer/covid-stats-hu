@@ -4,6 +4,7 @@
   import moment from 'moment-timezone'
   import Spinner from './Spinner.svelte'
   import { fade } from 'svelte/transition'
+  import { prettierNumber } from '../utils/number'
 
   moment.tz.setDefault('Europe/Budapest')
 
@@ -36,35 +37,41 @@
 <div class="latest-data">
   <div class="data cases">
     {#await today}
-      <h1>+{count}</h1>
+      <h1>+{prettierNumber(count)}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[loadedToday.dailyData.length - 1].cases}</h1>
+      <h1>
+        +{prettierNumber(loadedToday.dailyData[loadedToday.dailyData.length - 1].cases)}
+      </h1>
     {/await}
     <span>pozitív eset</span>
   </div>
   <div class="data deaths">
     {#await today}
-      <h1>+{count}</h1>
+      <h1>+{prettierNumber(count)}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[loadedToday.dailyData.length - 1].deaths}</h1>
+      <h1>
+        +{prettierNumber(loadedToday.dailyData[loadedToday.dailyData.length - 1].deaths)}
+      </h1>
     {/await}
     <span>elhunyt</span>
   </div>
   <div class="data recoveries">
     {#await today}
-      <h1>+{count}</h1>
+      <h1>+{prettierNumber(count)}</h1>
     {:then loadedToday}
       <h1>
-        +{loadedToday.dailyData[loadedToday.dailyData.length - 1].recoveries}
+        +{prettierNumber(loadedToday.dailyData[loadedToday.dailyData.length - 1].recoveries)}
       </h1>
     {/await}
     <span>felépült</span>
   </div>
   <div class="data tests">
     {#await today}
-      <h1>+{count}</h1>
+      <h1>+{prettierNumber(count)}</h1>
     {:then loadedToday}
-      <h1>+{loadedToday.dailyData[loadedToday.dailyData.length - 1].tests}</h1>
+      <h1>
+        +{prettierNumber(loadedToday.dailyData[loadedToday.dailyData.length - 1].tests)}
+      </h1>
     {/await}
     <span>teszt</span>
   </div>

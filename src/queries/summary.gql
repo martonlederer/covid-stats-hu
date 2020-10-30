@@ -1,0 +1,11 @@
+query {
+  allTime {
+    tests
+    cases
+    deaths
+    recoveries
+    caseRate
+    recoveryRate
+    fatalityRate
+  }
+}
