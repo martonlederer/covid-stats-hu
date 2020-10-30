@@ -15,7 +15,8 @@
       deaths: number[] = [],
       recoveries: number[] = [],
       tests: number[] = [],
-      dates: string[] = []
+      dates: string[] = [],
+      nodatas: Record<string, boolean> = {}
 
     for (const dta of data.dailyData) {
       dates.push(dta.day)
@@ -23,9 +24,10 @@
       deaths.push(dta.deaths)
       recoveries.push(dta.recoveries)
       tests.push(dta.tests)
+      nodatas[dta.day] = dta.nodata
     }
 
-    return { cases, deaths, recoveries, tests, dates }
+    return { cases, deaths, recoveries, tests, dates, nodatas }
   }
 </script>
 
@@ -57,7 +59,7 @@
                     colorStart: '#79cfe0',
                     colorEnd: '#00ccf5'
                   }) }] }}
-          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
+          options={{ maintainAspectRatio: false, elements: { line: { borderWidth: 2, borderCapStyle: 'round' }, point: { radius: 0 } }, tooltips: { mode: 'index', intersect: false, callbacks: { label: (tooltipItem) => `${tooltipItem.value > 0 ? '+' : ''}${tooltipItem.value}`, afterLabel: (tooltipItem) => (loadedData.nodatas[tooltipItem.label] && tooltipItem.value <= 0 ? '\nKevés vagy semennyi \nadat nem áll rendelkezésre \nerre a napra' : tooltipItem.value < 0 ? '\nValószínűleg helytelen adat' : '') } }, hover: { mode: 'nearest', intersect: true }, scales: { yAxes: [{ gridLines: { display: false }, ticks: { display: false } }], xAxes: [{ type: 'time', ticks: { autoSkip: true, maxTicksLimit: 12 } }] } }} />
       </div>
     </div>
   {/await}
@@ -78,8 +80,15 @@
     display: flex
     flex-wrap: wrap
 
+    @media screen and (max-width: 720px)
+      display: block
+      flex-wrap: unset
+
     .graph
       width: 47%
+
+      @media screen and (max-width: 720px)
+        width: 100%
 
       h1
         font-size: 1.5em
