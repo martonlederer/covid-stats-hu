@@ -5,6 +5,7 @@
   import Spinner from './Spinner.svelte'
   import { fade } from 'svelte/transition'
   import type { ExpandParams } from 'src/utils/types'
+  import { createGradient } from '../utils/graphs'
 
   let data = loadData()
 
@@ -24,23 +25,6 @@
     }
 
     return { dates, cases, deaths, recoveries }
-  }
-
-  function createGradient(
-    context,
-    colors: { colorStart?: string; colorEnd?: string } = {}
-  ) {
-    let gradient = context.chart.ctx.createLinearGradient(
-      0,
-      0,
-      context.chart.width,
-      context.chart.height
-    )
-
-    gradient.addColorStop(0, colors.colorStart ?? 'rgba(255, 160, 128, 1)')
-    gradient.addColorStop(1, colors.colorEnd ?? 'rgb(255, 62, 0)')
-
-    return gradient
   }
 
   function expandTransition(
@@ -63,7 +47,7 @@
 </script>
 
 <h1 class="title">
-  A járvány alakulása
+  <span>A járvány alakulása</span>
   {#await data}
     <div class="loading-data" transition:fade={{ duration: 280 }}>
       <span>Betöltés...</span>
@@ -107,5 +91,6 @@
   .all-time-graph
     position: relative
     height: 300px
+    margin-bottom: 2em
 
 </style>
