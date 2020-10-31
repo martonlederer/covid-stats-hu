@@ -1,5 +1,6 @@
 query($from: String!, $to: String!) {
   dailyData(from: $from, to: $to) {
+    day
     cases
     deaths
     recoveries

@@ -32,6 +32,13 @@
       <span>Betöltés...</span>
       <Spinner speed={800} />
     </div>
+  {:then loadedData}
+    <span
+      class="last-update"
+      class:fresh={moment(loadedData.dailyData[loadedData.dailyData.length - 1].day).format('YYYY.MM.DD.') === moment().format('YYYY.MM.DD.')}>
+      Frissítve:
+      {moment(loadedData.dailyData[loadedData.dailyData.length - 1].day).format('YYYY.MM.DD.')}
+    </span>
   {/await}
 </h1>
 <div class="latest-data">
@@ -82,6 +89,15 @@
   h1.title
     +title
     +titleWithLoading
+
+    span.last-update
+      font-size: .45em
+      color: #ff0000
+      font-weight: 500
+
+      &.fresh
+        font-weight: 400
+        color: #00f535
 
   .latest-data
     display: flex
