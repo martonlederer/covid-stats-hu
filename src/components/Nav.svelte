@@ -7,8 +7,11 @@
 <div class="Nav" bind:clientHeight={navHeight} class:scrolled={scrollY > 30}>
   <h1>Covid-19</h1>
   <div class="menu">
-    <a href="/api" target="_blank">API</a>
-    <a href="https://marton.lederer.hu" target="_blank">Készítő</a>
+    <a href="/api" target="_blank" rel="noopener">API</a>
+    <a
+      href="https://marton.lederer.hu"
+      target="_blank"
+      rel="noopener">Készítő</a>
   </div>
 </div>
 <div class="nav-placeholder" style="height: {navHeight}px" />

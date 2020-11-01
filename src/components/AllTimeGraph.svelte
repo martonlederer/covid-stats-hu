@@ -79,7 +79,10 @@
 {/await}
 <p class="description end">
   Forrás:
-  <a href="https://koronavirus.gov.hu" target="_blank">koronavirus.gov.hu</a>
+  <a
+    href="https://koronavirus.gov.hu"
+    target="_blank"
+    rel="noopener">koronavirus.gov.hu</a>
 </p>
 
 <style lang="sass">
