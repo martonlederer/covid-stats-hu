@@ -5,6 +5,7 @@
   import DailyGraphs from '../components/DailyGraphs.svelte'
   import SummaryData from '../components/SummaryData.svelte'
   import Footer from '../components/Footer.svelte'
+  import Warning from '../components/Warning.svelte'
 </script>
 
 <Nav />
@@ -13,6 +14,7 @@
   <AllTimeGraph />
   <DailyGraphs />
   <SummaryData />
+  <Warning />
   <Footer />
 </div>
 
