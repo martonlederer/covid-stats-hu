@@ -2,7 +2,7 @@ name: Update case data
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   update:
