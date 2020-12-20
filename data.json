@@ -1,12 +1,12 @@
 {
   "total": {
-    "tests": 2480804,
-    "casesBp": 58453,
-    "casesOthers": 241569,
-    "deathsBp": 1606,
-    "deathsOthers": 6308,
-    "recoveriesBp": 21102,
-    "recoveriesOthers": 72221
+    "tests": 2504837,
+    "casesBp": 58947,
+    "casesOthers": 244042,
+    "deathsBp": 1634,
+    "deathsOthers": 6465,
+    "recoveriesBp": 21751,
+    "recoveriesOthers": 75692
   },
   "days": [
     {
@@ -4047,6 +4047,26 @@
         "deathsOthers": 6308,
         "recoveriesBp": 21102,
         "recoveriesOthers": 72221
+      }
+    },
+    {
+      "day": "2020-12-20",
+      "tests": 24033,
+      "casesBp": 494,
+      "casesOthers": 2473,
+      "deathsBp": 28,
+      "deathsOthers": 157,
+      "recoveriesBp": 649,
+      "recoveriesOthers": 3471,
+      "nodata": false,
+      "total": {
+        "tests": 2504837,
+        "casesBp": 58947,
+        "casesOthers": 244042,
+        "deathsBp": 1634,
+        "deathsOthers": 6465,
+        "recoveriesBp": 21751,
+        "recoveriesOthers": 75692
       }
     }
   ]
