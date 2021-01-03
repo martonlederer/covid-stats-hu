@@ -53,6 +53,12 @@
       <h1>{fixPercentage(loadedData.caseRate)}%</h1>
       <span>beteg az országban</span>
     </div>
+    <div class="data" transition:fade={{ duration: 300 }}>
+      <h1>
+        {prettierNumber(loadedData.cases - loadedData.deaths - loadedData.recoveries)}
+      </h1>
+      <span>jelenleg beteg</span>
+    </div>
   {/await}
 </div>
 
