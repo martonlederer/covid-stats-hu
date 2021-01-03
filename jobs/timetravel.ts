@@ -7,7 +7,7 @@ import type { ITotalData, IDayData } from '../api/types'
 import { join } from 'path'
 
 console.log(
-  'WARNING: UNSUPPORTED SCRIPT. \nMAKE SURE TO READ THE COMMENTS IN THE "timetravel.js" file before running this.'
+  'WARNING: UNSUPPORTED SCRIPT. \nMAKE SURE TO READ THE COMMENTS IN THE "timetravel.ts" file before running this.'
 )
 
 const createDataFromEl = (parsedData, el) =>
