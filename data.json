@@ -4388,26 +4388,6 @@
         "recoveriesBp": 32652,
         "recoveriesOthers": 143924
       }
-    },
-    {
-      "day": "2021-01-06",
-      "tests": 1985,
-      "casesBp": 294,
-      "casesOthers": 1753,
-      "deathsBp": 15,
-      "deathsOthers": 103,
-      "recoveriesBp": 431,
-      "recoveriesOthers": 2534,
-      "nodata": false,
-      "total": {
-        "tests": 2729881,
-        "casesBp": 62988,
-        "casesOthers": 268780,
-        "deathsBp": 1947,
-        "deathsOthers": 8251,
-        "recoveriesBp": 33083,
-        "recoveriesOthers": 146458
-      }
     }
   ]
 }
