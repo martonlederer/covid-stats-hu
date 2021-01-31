@@ -46,7 +46,7 @@ axios
 
     console.log('Processed/parsed data')
 
-    // check if yesterday is not existing
+    // check if yesterday does not exist
     if (
       covidData['days'].find(
         (el) => el.day === moment().subtract(1, 'days').format('YYYY-MM-DD')
