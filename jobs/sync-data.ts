@@ -23,30 +23,21 @@ let covidData: { total: ITotalData; days: IDayData[] } = JSON.parse(
 )
 
 axios
-  .get(process.env.API_URL)
+  .get('https://koronavirus.gov.hu/')
   .then(({ data }) => {
     console.log('Got data from API')
 
     // get current data
     const parsedData = parse(data),
-      tests = createDataFromEl(parsedData, process.env.TESTS_EL),
-      currentCasesBp = createDataFromEl(parsedData, process.env.CASES_PEST_EL),
-      currentCasesOthers = createDataFromEl(
-        parsedData,
-        process.env.CASES_OTHERS_EL
-      ),
-      currentDeathsBp = createDataFromEl(parsedData, process.env.DEATHS_BP_EL),
-      currentDeathsOthers = createDataFromEl(
-        parsedData,
-        process.env.DEATHS_OTHERS_EL
-      ),
-      currentRecoveriesBp = createDataFromEl(
-        parsedData,
-        process.env.RECOVERIES_BP_EL
-      ),
+      tests = createDataFromEl(parsedData, '#api-mintavetel'),
+      currentCasesBp = createDataFromEl(parsedData, '#api-fertozott-pest'),
+      currentCasesOthers = createDataFromEl(parsedData, '#api-fertozott-videk'),
+      currentDeathsBp = createDataFromEl(parsedData, '#api-elhunyt-pest'),
+      currentDeathsOthers = createDataFromEl(parsedData, '#api-elhunyt-videk'),
+      currentRecoveriesBp = createDataFromEl(parsedData, '#api-gyogyult-pest'),
       currentRecoveriesOthers = createDataFromEl(
         parsedData,
-        process.env.RECOVERIES_OTHERS_EL
+        '#api-gyogyult-videk'
       ),
       casesBp = currentCasesBp + currentDeathsBp + currentRecoveriesBp,
       casesOthers =
