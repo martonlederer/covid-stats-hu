@@ -14,8 +14,6 @@ const createDataFromEl = (parsedData, el): number =>
     Number(parsedData.querySelector(el).innerText.split(' ').join('')),
   dataFile = join(process.cwd(), './data.json')
 
-if (!process.env.PRODUCTION) require('dotenv').config() // for development, make sure to create a .env file with the required environment variables
-
 moment.tz.setDefault('Europe/Budapest')
 
 let covidData: { total: ITotalData; days: IDayData[] } = JSON.parse(
