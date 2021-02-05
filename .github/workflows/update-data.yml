@@ -25,16 +25,6 @@ jobs:
 
       - name: Fetch data
         run: yarn sync
-        env:
-          PRODUCTION: true
-          API_URL: ${{ secrets.API_URL }}
-          TESTS_EL: ${{ secrets.TESTS_EL }}
-          CASES_PEST_EL: ${{ secrets.CASES_PEST_EL }}
-          CASES_OTHERS_EL: ${{ secrets.CASES_OTHERS_EL }}
-          DEATHS_BP_EL: ${{ secrets.DEATHS_BP_EL }}
-          DEATHS_OTHERS_EL: ${{ secrets.DEATHS_OTHERS_EL }}
-          RECOVERIES_BP_EL: ${{ secrets.RECOVERIES_BP_EL }}
-          RECOVERIES_OTHERS_EL: ${{ secrets.RECOVERIES_OTHERS_EL }}
 
       - name: Push changes
         uses: actions-js/push@master
