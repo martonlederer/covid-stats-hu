@@ -2,7 +2,7 @@ name: Update case data
 
 on:
   schedule:
-    - cron: '*/15 7-13 * * *'
+    - cron: '*/15 8-13 * * *'
 
 jobs:
   update:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v1
         with:
-          node-version: '15'
+          node-version: '14'
     
       - name: Checkout master
         uses: actions/checkout@master
