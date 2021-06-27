@@ -7828,6 +7828,26 @@
         "recoveriesBp": 136828,
         "recoveriesOthers": 600405
       }
+    },
+    {
+      "day": "2021-06-26",
+      "tests": 0,
+      "casesBp": 0,
+      "casesOthers": 0,
+      "deathsBp": 0,
+      "deathsOthers": 0,
+      "recoveriesBp": 0,
+      "recoveriesOthers": 0,
+      "nodata": true,
+      "total": {
+        "tests": 6094415,
+        "casesBp": 144110,
+        "casesOthers": 663800,
+        "deathsBp": 5349,
+        "deathsOthers": 24631,
+        "recoveriesBp": 136828,
+        "recoveriesOthers": 600405
+      }
     }
   ]
 }
