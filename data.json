@@ -8528,6 +8528,26 @@
         "recoveriesBp": 137355,
         "recoveriesOthers": 610802
       }
+    },
+    {
+      "day": "2021-07-31",
+      "tests": 0,
+      "casesBp": 0,
+      "casesOthers": 0,
+      "deathsBp": 0,
+      "deathsOthers": 0,
+      "recoveriesBp": 0,
+      "recoveriesOthers": 0,
+      "nodata": true,
+      "total": {
+        "tests": 6328373,
+        "casesBp": 144557,
+        "casesOthers": 664934,
+        "deathsBp": 5357,
+        "deathsOthers": 24669,
+        "recoveriesBp": 137355,
+        "recoveriesOthers": 610802
+      }
     }
   ]
 }
